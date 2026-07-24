@@ -281,9 +281,7 @@ body {
 .cover-pair img {
   height: 100%;
   width: auto;
-  aspect-ratio: 526 / 988;
   max-width: 46%;
-  object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
@@ -339,9 +337,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--text);
   border-radius: 5px;
-  color: var(--accent);
+  color: var(--text);
 }
 .section-icon svg { width: 16px; height: 16px; }
 
