@@ -324,6 +324,23 @@ body {
 .section + .section { padding-top: 56px; }
 .section:last-of-type { padding-bottom: 96px; }
 
+.section-heading { position: relative; }
+.section-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(calc(-100% - 12px));
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  color: var(--accent);
+}
+.section-icon svg { width: 22px; height: 22px; }
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
