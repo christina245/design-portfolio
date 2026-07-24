@@ -330,8 +330,8 @@ body {
   top: 0;
   left: 0;
   transform: translateY(calc(-100% - 12px));
-  width: 44px;
-  height: 44px;
+  width: 25px;
+  height: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -339,7 +339,7 @@ body {
   border-radius: 5px;
   color: var(--accent);
 }
-.section-icon svg { width: 22px; height: 22px; }
+.section-icon svg { width: 13px; height: 13px; }
 
 .project-grid {
   display: grid;
