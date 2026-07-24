@@ -251,6 +251,39 @@ body {
   color: var(--muted);
 }
 
+.ph--fixed-360 { aspect-ratio: auto; height: 360px; }
+
+.ph-fill {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+/* Dark backdrop for project cards showing app-screen covers */
+.ph--dark {
+  background: #1C1C24;
+  background-image: none;
+}
+.cover-pair {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+}
+.cover-pair img {
+  height: 100%;
+  width: auto;
+  max-width: 46%;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
 /* ---------- Reveal-on-scroll ---------- */
 .reveal {
   opacity: 0;
