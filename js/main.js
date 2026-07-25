@@ -44,5 +44,20 @@
     } else {
       revealEls.forEach(function (el) { el.classList.add('is-visible'); });
     }
+
+    document.querySelectorAll('img[data-alt-src]').forEach(function (img) {
+      var srcA = img.getAttribute('src');
+      var srcB = img.getAttribute('data-alt-src');
+      var durA = parseInt(img.getAttribute('data-duration-a'), 10);
+      var durB = parseInt(img.getAttribute('data-duration-b'), 10);
+      var showingA = true;
+      (function swap() {
+        setTimeout(function () {
+          showingA = !showingA;
+          img.src = showingA ? srcA : srcB;
+          swap();
+        }, showingA ? durA : durB);
+      })();
+    });
   });
 })();
