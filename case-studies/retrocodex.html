@@ -34,9 +34,9 @@
   <h1 class="h1">Retrocodex</h1>
   <p class="cs-dek">Designing an inclusive knowledge-discovery platform around a problem thousands of social media users thought was impossible to solve.</p>
   <div class="cs-meta">
-    <div><div class="cs-meta-label">ROLE</div><div class="cs-meta-value">Solo product designer</div></div>
+    <div><div class="cs-meta-label">ROLE</div><div class="cs-meta-value">Founding product designer and researcher, AI software developer</div></div>
     <div><div class="cs-meta-label">TIMELINE</div><div class="cs-meta-value">Sep 2025 – Apr 2026</div></div>
-    <div><div class="cs-meta-label">SCOPE</div><div class="cs-meta-value">Research, IA, UX/UI, beta launch</div></div>
+    
     <div><div class="cs-meta-label">LIVE SITE</div><div class="cs-meta-value"><a href="https://theretrocodex.com" target="_blank" rel="noopener">theretrocodex.com ↗</a></div></div>
   </div>
 </header>
@@ -47,13 +47,13 @@
 
 <div class="cs-lede">
   <p class="cs-pullquote">I identified an internet-wide unmet user need, validated it using thousands of organic user comments, designed around seemingly contradictory user requirements, shipped an MVP, and iterated it into a product that reached millions of people.</p>
-  <p class="cs-lede-note">A few individuals had attempted versions of this site before, but none gained meaningful traction.</p>
+  <p class="cs-lede-note">A few others have made their own versions of this site, but none had gained enough traction to be easily found. The only exception I've found is What They Got Wrong, which launched in March 2026 when Retrocodex's user dashboard was in progress.</p>
 </div>
 
 <section class="cs-section">
-  <div class="eyebrow">01 — origin</div>
+  <div class="eyebrow">01 — THE TWEET THAT LAUNCHED A THOUSAND PAIN POINTS</div>
   <h2 class="h2">Where it started</h2>
-  <p>In September 2025, I came across a viral post that had been circulating online since 2020. Because of the topic's virality, several user pain points emerged — leading to a tough, seemingly impossible problem statement.</p>
+  <p>In September 2025, I came across a viral post that had been circulating online since 2020 and had been reposted at least a hundred times. Because of the topic struck a nerve with thousands of users, they let out their frustration in the comments, complaining of several topics they'd been taught by teachers and family members that later turned out to be untrue.</p>
   <div class="ph cs-image-block" style="height:220px">
     <span class="ph-label">grid of popular reposts — 744 × 220</span>
   </div>
@@ -81,37 +81,40 @@
 
 <section class="cs-section-band">
   <div class="cs-section">
-    <div class="eyebrow">02 — validation</div>
+    <div class="eyebrow">02 — SUBJECT MATTER RESEARCH</div>
     <h2 class="h2">From concept to reality</h2>
-    <p>As the prompt circulated, users repeatedly named "facts" they were taught that were later overturned or never true — Pluto is a planet, blood is blue until it hits oxygen, Marie Antoinette's "let them eat cake."</p>
-    <p>Yet five years later, nobody had successfully built the product. That raised the real UX question: if demand is this obvious, why hasn't anyone solved it?</p>
-    <div class="cs-stat-grid" style="grid-template-columns: 1fr;">
-      <div class="cs-stat">
+    <div class="cs-stat">
         <div class="cs-stat-number">10,000+</div>
-        <div class="cs-stat-caption">organic comments analyzed</div>
+        <div class="cs-stat-caption">organic comments analyzed through reposts on Instagram, Facebook, Reddit, and X</div>
       </div>
+    <p>Frustrated users repeatedly named "facts" they were taught that were later overturned or never true: Pluto is a planet, blood is blue until it hits oxygen, Marie Antoinette's "let them eat cake." These topics ranged from academic facts taught by teachers to old wives' tales and urban legends.</p>
+    
+    <div class="cs-stat-grid" style="grid-template-columns: 1fr;">
+      
     </div>
-    <p style="margin-top:28px">The same complaints appeared over and over:</p>
+    <p>Through five years of persistent demand the website exist, not even an AI-generated version had gained proportional traction. Upon analyzing user comments, I assumed the bulk of the reasons had to do with the fact that
+    most of these topics had no official date when they were overturned in curricula or public belief.</p>
+    <p style="margin-top:8px">These commonly recurring themes were probably significant deterrents to the site's existence:</p>
     <div class="cs-quote-stack">
-      <div>"Education isn't standardized."</div>
-      <div>"Every country teaches different things."</div>
-      <div>"Every state teaches different things."</div>
-      <div>"Different school districts update curriculum at different times."</div>
+      <div>"Education isn't standardized throughout the world."</div>
+      <div>"If I grew up in South Africa, I don't think I learned the same things growing up as Americans."</div>
+      <div>"These debunked lessons you were taught in 1995 is still being taught to my child today."</div>
+      <div>"Different school districts and parts of the world update curriculum at different times."</div>
     </div>
-    <p>Most of these topics had no official date when they were overturned in curricula or public belief — so the original "input the year" idea couldn't produce accurate, inclusive results. I initially planned to classify facts by subject instead: history, life sciences, social sciences, gender &amp; sexuality, and more.</p>
+     <p>This means the original "input the year you graduated" discovery architecture was factually impossible. I decided to give up on building the site until I realized that I could classify facts by subject instead: history, life sciences, social sciences, gender &amp; sexuality, and more.</p>
   </div>
 </section>
 
 <section class="cs-section">
-  <div class="eyebrow">03 — research</div>
-  <h2 class="h2">Research</h2>
-  <p>After analyzing thousands of naturally occurring discussions, I ran my own survey with 15 people interested in the concept, focused on their experiences being taught untrue facts.</p>
+  <div class="eyebrow">03 — user experience research</div>
+  <h2 class="h2">Designing the site</h2>
+  <p>Alongside learning more about what outdated or untrue lessons people throughout the world were taught, I ran my own survey with 15 people interested in the concept, exploring their experiences discovering that parts of their education were outdated or untrue. I recruited participants from my friends and from general and social impact tech meetups in San Francisco.</p>
   <div class="ph cs-image-block" style="height:260px">
     <span class="ph-label">survey results overview — 744 × 260</span>
   </div>
-  <p style="margin-bottom:32px">For encyclopedic content, I researched "common misconceptions we were taught" round-ups and chose 100 of the most commonly repeated facts — leaving the rest open for user submissions.</p>
+  <p style="margin-bottom:32px">For the site's encyclopedic content, I researched "common misconceptions we were taught" round-ups and chose 100 of the most commonly repeated facts — leaving the rest open for user submissions.</p>
 
-  <p>While primary research was pending, I revisited the social discussions for what users expected from the product. Several concerns kept surfacing. Users wanted:</p>
+  <p>While primary research was pending, I revisited the social discussions, this time focusing on comments discussing the website concept itself in a technical perspective beyond its factual content. Several concerns and feature demands kept surfacing. Users wanted:</p>
   <ul style="margin-bottom:28px">
     <li>personalized results</li>
     <li>regional relevance</li>
@@ -119,11 +122,11 @@
     <li>discussion around nuanced topics</li>
     <li>acknowledgement that people learned different things</li>
   </ul>
-
+<p>These insights dramatically evolved the original design objective.</p>
   <div class="cs-reframe">
     <div>
       <div class="cs-reframe-label">FROM</div>
-      <div class="cs-reframe-value">"Build a database of outdated facts"</div>
+      <div class="cs-reframe-value">"Build a simple database of outdated facts"</div>
     </div>
     <div class="cs-reframe-arrow">→</div>
     <div>
@@ -135,11 +138,11 @@
 
 <section class="cs-section-band">
   <div class="cs-section">
-    <div class="eyebrow">04 — design challenges</div>
-    <h2 class="h2" style="margin-bottom:40px">Three design challenges</h2>
+    <div class="eyebrow">04 — Solving seemingly irreconcilable problems</div>
+    <h2 class="h2" style="margin-bottom:40px">The main design challenges</h2>
 
     <h3 class="h3" style="margin-top:0">1. Knowledge isn't globally standardized</h3>
-    <p>Most reposts sparked the same argument: "You were taught that in school? I wasn't." Or: "My kid is being taught this now." A universal fact list would inevitably alienate someone.</p>
+    <p>Many comments fell along the lines of "You were taught that in school? I wasn't." Or: "My kid is being taught this now." A universal fact list would inevitably alienate many users.</p>
     <div class="ph cs-image-block" style="height:180px">
       <span class="ph-label">screenshots of comments — 744 × 180</span>
     </div>
@@ -151,22 +154,18 @@
       <li>science continues evolving</li>
       <li>new discoveries happen gradually</li>
     </ul>
-    <p>Rather than hiding uncertainty, the interface embraces it — shifting the product from declaring what users were taught toward helping them explore what they may have learned.</p>
+    <p>Rather than hiding uncertainty, the interface embraces it. Instead of authoritatively declaring "these are the lies you were taught", I aimed for a "this is what you <i>may have</i> been taught that was later disproven, or was already disproven when you learned it yet circulated anyway".</p>
     <div class="cs-image-row" style="margin-bottom:12px">
       <div class="ph" style="flex:1;height:200px"><span class="ph-label">homepage decades view — 360 × 200</span></div>
       <div class="ph" style="flex:1;height:200px"><span class="ph-label">category page — 360 × 200</span></div>
     </div>
 
     <h3 class="h3">2. Most outdated facts don't have a single revision date</h3>
-    <p>Many discoveries happen over decades, not overnight:</p>
-    <ul>
-      <li>Nutrition guidance changes gradually — the USDA has revised its Food Pyramid three times in 35 years</li>
-      <li>Myths like "you only use 10% of your brain" circulated for decades after being disproven</li>
-      <li>Historical interpretations evolve as previously overlooked voices come to light</li>
-    </ul>
-    <p>Assigning a single cutoff year would create false precision — the only exception being facts overturned by an official governing body, like a Food Pyramid revision or a country renaming or splitting.</p>
+    <p>Even if a scientific study or sturdy historical evidence debunked a fact, my research told me that its teaching often continued to circulate in academia and/or in popular culture through community and media.</p>
+    
+    <p>Assigning a single cutoff year would create false precision. The only facts I could assign single years to were ones that were officially overturned by an governing body, like a Food Pyramid revision or a country renaming or splitting. On the site, these fact cards are labeled "Official Revision" with the year they were revised.</p>
     <div class="cs-solution-label">DESIGN DECISION</div>
-    <p>I organized knowledge by graduation decade instead of year — an approach that also accommodates gradual curriculum change.</p>
+    <p>I organized knowledge by graduation decade instead of year. This approach is intended to accomodate gradual curriculum change.</p>
     <div class="ph" style="height:220px">
       <span class="ph-label">homepage — 744 × 220</span>
     </div>
@@ -176,9 +175,8 @@
     <ul>
       <li>specify where they grew up</li>
       <li>discover users nearby</li>
-      <li>browse local discussions</li>
-      <li>view a Local feed</li>
-      <li>follow contributors with similar educational backgrounds</li>
+      <li>browse local discussions in their user dashboard</li>
+      <li>follow users with similar regional backgrounds</li>
     </ul>
     <p>The result turns Retrocodex from a static archive into a geographically contextual knowledge community.</p>
     <div class="cs-image-row">
@@ -190,8 +188,8 @@
 </section>
 
 <section class="cs-section">
-  <div class="eyebrow">05 — information architecture</div>
-  <h2 class="h2">Multiple ways in</h2>
+  <div class="eyebrow">05 — Information architecture for multiple fact discovery paths</div>
+  <h2 class="h2">What if "search by decade" wasn't including enough topics?</h2>
   <p>Structuring the site by decade alone wouldn't be fully accurate — users from regions behind in curriculum updates may still be taught facts phased out elsewhere. As one respondent put it:</p>
   <p class="cs-source-quote">"I know I graduated in 2004, but since I grew up in a poorly-funded region, I think there's a lot more I learned that may be currently outdated than I can see on the results for my graduation decade."</p>
   <p>To accommodate that, the site can be explored through multiple dimensions:</p>
@@ -211,9 +209,9 @@
 
 <section class="cs-section-band">
   <div class="cs-section">
-    <div class="eyebrow">06 — trust</div>
-    <h2 class="h2">Building trust</h2>
-    <p>The most common pain point was "I feel like I can't trust what I've been taught." Addressing it meant designing clear credibility signals rather than another fact-checking site:</p>
+    <div class="eyebrow">06 — Making the site look legit</div>
+    <h2 class="h2">Building user trust</h2>
+    <p>The most common pain point was "I feel like I can't trust what I've been taught." Getting disillusioned, disappointed users to trust a new product wasn't going to be easy. To design for trust, I included features such as:</p>
     <ul style="margin-bottom:28px">
       <li>citations on every fact</li>
       <li>revision timelines</li>
@@ -227,39 +225,55 @@
       <div class="ph" style="flex:1;height:180px;background:var(--bg)"><span class="ph-label">nuance / controversy tab — 236 × 180</span></div>
       <div class="ph" style="flex:1;height:180px;background:var(--bg)"><span class="ph-label">debated label — 236 × 180</span></div>
     </div>
-    <p style="margin-top:24px;margin-bottom:0">The goal was to encourage learning and critical thinking — not adjudicate right and wrong.</p>
+    <p style="margin-top:24px;margin-bottom:0">The goal was to encourage learning and critical thinking rather than adjudicating right and wrong.</p>
   </div>
 </section>
 
 <section class="cs-section">
-  <div class="eyebrow">07 — outcomes</div>
-  <h2 class="h2" style="margin-bottom:32px">Outcomes</h2>
+  <div class="eyebrow">07 — Further addressing the factual uncertainty</div>
+  <h2 class="h2">Iterating out of criticism</h2>
+  <p>I started promoting Retrocodex online in May 2026 primarily on Threads and Reddit. So far, the majority of the feedback has been positive.</p>
+  <div class="cs-image-row" style="margin-bottom:20px">
+    <div class="ph" style="flex:1;height:300px"><span class="ph-label">400 × 300</span></div>
+    <div class="ph" style="flex:1;height:300px"><span class="ph-label">400 × 300</span></div>
+  </div>
+  <p>The vast majority of the negative feedback centered on a single theme: "I wasn't taught that!"</p>
+  <p>I inferred that the disappointed users did not see the disclaimers acknowledging that the site's content could not possibly apply to each person and that its content was consistently revised through user submissions and comments. Surely many of the other users weren't taught many of the site's available facts, but they most likely saw the disclaimers.</p>
+  <p>To address this consistent user pain point, I redesigned the disclaimer section that appeared above each fact list. I assumed some users were likely skipping the disclaimer section to read the facts, so I redesigned the disclaimers to be unskippable.</p>
+  <p>Instead of plain text sitting above the fact lists, the disclaimers now appear in a modal that always displays each time the user selects a decade on the homepage. Users are required to acknowledge each disclaimer before viewing the fact list:</p>
+  <div class="ph" style="width:700px;height:700px;margin:0 auto"><span class="ph-label">700 × 700</span></div>
+</section>
+
+<section class="cs-section">
+  <div class="eyebrow">08 — Retrocodex's impact</div>
+  <h2 class="h2" style="margin-bottom:32px">The traction as of July 2026</h2>
   <div class="cs-stat-grid" style="grid-template-columns: 1fr 1fr; margin-bottom:32px">
     <div class="cs-stat">
-      <div class="cs-stat-number">4M+</div>
-      <div class="cs-stat-caption">views across viral videos featuring the site</div>
+      <div class="cs-stat-number">4 million+</div>
+      <div class="cs-stat-caption">views across viral videos made about the site</div>
     </div>
     <div class="cs-stat">
       <div class="cs-stat-number">6,000+</div>
-      <div class="cs-stat-caption">members in the r/LearnedWrong community</div>
+      <div class="cs-stat-caption">members in the official Reddit community, /r/LearnedWrong</div>
     </div>
   </div>
   <p>Since the beta shipped in late April 2026, Retrocodex has:</p>
   <ul style="margin-bottom:28px">
-    <li>Appeared in viral videos totaling more than 4 million views</li>
+    
     <li>Been featured on podcasts including <a href="https://www.gog.show/why-we-sigh/" class="link-accent-bold" target="_blank" rel="noopener noreferrer">Grumpy Old Geeks</a> and <a href="https://www.youtube.com/watch?v=tK1ctEZjF4w" class="link-accent-bold" target="_blank" rel="noopener noreferrer">Modern Wisdom</a></li>
     <li>Built an accompanying <a href="http://reddit.com/r/LearnedWrong" class="link-accent-bold" target="_blank" rel="noopener noreferrer">Reddit community</a> with 6,000+ members</li>
     <li>Been featured on <a href="https://www.boredpanda.com/learned-wrong-posts/" class="link-accent-bold" target="_blank" rel="noopener noreferrer">Bored Panda</a></li>
+    <li>Has been shared several times organically by users throughout Threads, LinkedIn, and Instagram</li>
   </ul>
-  <p class="cs-pullquote">Perhaps most importantly, the project validated that a problem many believed couldn't be solved could be made approachable through careful product design — not just technical complexity.</p>
+  <p class="cs-pullquote">The project validated that a problem many believed couldn't be solved could be made approachable through careful and nuanced product design. I hope it'll continue to give everyone's brain a system update!</p>
 </section>
 
 <section class="cs-cta">
-  <h2 class="h2">Got a fact that turned out to be wrong?</h2>
-  <p class="cs-dek" style="margin:0 auto 32px">Submit it to the site — Retrocodex is always growing.</p>
+  <h2 class="h2">Got a fact that turned out to be wrong or outdated?</h2>
+  <p class="cs-dek" style="margin:0 auto 32px">Submit it to Retrocodex.</p>
   <div class="cs-cta-actions">
-    <a href="https://theretrocodex.com" class="cs-btn cs-btn--primary" target="_blank" rel="noopener">Visit Retrocodex</a>
-    <a href="../index.html#contact" class="cs-btn cs-btn--secondary" target="_blank" rel="noopener noreferrer">Get in touch</a>
+    <a href="https://theretrocodex.com/submit" class="cs-btn cs-btn--primary" target="_blank" rel="noopener">Visit Retrocodex</a>
+    
   </div>
 </section>
 

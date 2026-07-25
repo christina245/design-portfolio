@@ -394,6 +394,7 @@ body {
 
 .cs-section { max-width: 840px; margin: 0 auto; padding: 64px 48px; }
 .cs-section-band { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.cs-section .eyebrow { display: block; margin-bottom: 5px; }
 .cs-section p { font-size: 16px; line-height: 1.7; margin: 0 0 16px; }
 .cs-section ul { padding-left: 22px; font-size: 16px; line-height: 1.9; margin: 0 0 20px; }
 .cs-section h3 { margin-top: 40px; }
