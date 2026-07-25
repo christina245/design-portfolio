@@ -51,9 +51,9 @@
   --text: #0A0A0A;
   --muted: #565F6D;
   --border: rgba(10, 10, 10, 0.09);
-  --accent: #7F52FF;
-  --accent-text: #7F52FF;
-  --accent-grad: linear-gradient(90deg, #8E63FF, #7F52FF);
+  --accent: #2F8693;
+  --accent-text: #2F8693;
+  --accent-grad: linear-gradient(90deg, #4BC1D2, #2F8693);
   --ph-bg: #F1F1F3;
   --ph-stripe: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.04) 0px, rgba(0, 0, 0, 0.04) 2px, transparent 2px, transparent 14px);
   --badge-bg: rgba(255, 255, 255, 0.85);
@@ -65,9 +65,9 @@
   --text: #E5E5EA;
   --muted: #A3A2AF;
   --border: rgba(229, 229, 234, 0.12);
-  --accent: #7F52FF;
-  --accent-text: #9B75FF;
-  --accent-grad: linear-gradient(90deg, #9B75FF, #7F52FF);
+  --accent: #2F8693;
+  --accent-text: #2F8693;
+  --accent-grad: linear-gradient(90deg, #4BC1D2, #2F8693);
   --ph-bg: #1F1F2A;
   --ph-stripe: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0px, rgba(255, 255, 255, 0.03) 2px, transparent 2px, transparent 14px);
   --badge-bg: rgba(31, 31, 42, 0.85);
@@ -78,7 +78,7 @@
 body { margin: 0; }
 a { color: inherit; text-decoration: none; }
 ul { margin: 0; }
-::selection { background: #7F52FF; color: #fff; }
+::selection { background: #2F8693; color: #fff; }
 
 body {
   font-family: 'Open Sauce Sans', sans-serif;
@@ -160,7 +160,6 @@ body {
   height: 90px;
   flex-shrink: 0;
   border-radius: 8px;
-  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -478,5 +477,5 @@ body {
   font-weight: 700;
   font-size: 16px;
 }
-.cs-btn--primary { background: var(--accent-grad); color: #fff; box-shadow: 0 4px 12px rgba(127, 82, 255, 0.3); }
+.cs-btn--primary { background: var(--accent-grad); color: #fff; box-shadow: 0 4px 12px rgba(47, 134, 147, 0.3); }
 .cs-btn--secondary { border: 1px solid var(--border); color: var(--text); }
