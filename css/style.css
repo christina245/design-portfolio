@@ -365,6 +365,43 @@ body {
 .project-title { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
 .project-desc { font-size: 16px; line-height: 1.6; color: var(--muted); margin: 0; }
 
+.project-title-soon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.project-title-soon:hover,
+.project-title-soon:focus {
+  text-decoration: underline;
+  outline: none;
+}
+.coming-soon-toast {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  margin-bottom: 8px;
+  width: 150px;
+  background: var(--text);
+  color: var(--bg);
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.4;
+  padding: 6px 10px;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(4px);
+  transition: opacity .15s ease, transform .15s ease;
+  z-index: 5;
+}
+.project-title-soon:hover .coming-soon-toast,
+.project-title-soon:focus .coming-soon-toast {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 32px 2rem;
