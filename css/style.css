@@ -526,3 +526,9 @@ body {
 }
 .cs-btn--primary { background: var(--accent-grad); color: #fff; box-shadow: 0 4px 12px rgba(47, 134, 147, 0.3); }
 .cs-btn--secondary { border: 1px solid var(--border); color: var(--text); }
+
+/* ---------- Contact page ---------- */
+.contact-section { max-width: 700px; margin: 0 auto; padding: 96px 2rem 96px; text-align: center; }
+.contact-section .h1 { margin-bottom: 16px; }
+.contact-subtitle { font-size: 18px; line-height: 1.6; color: var(--muted); margin: 0 0 48px; }
+.contact-form-wrap iframe { width: 100%; border: none; display: block; }
