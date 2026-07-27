@@ -266,6 +266,15 @@ body {
   display: block;
 }
 
+.ph--letterbox { background: #000; background-image: none; }
+.ph-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+}
+
 /* Dark backdrop for project cards showing app-screen covers */
 .ph--dark {
   background: #1C1C24;
