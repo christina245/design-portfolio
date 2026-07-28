@@ -275,6 +275,16 @@ body {
   display: block;
 }
 
+/* Container shrinks to match the photo's natural aspect ratio instead of
+   forcing a fixed box - apply wherever a real photo replaces a placeholder. */
+.ph--shrink { aspect-ratio: auto; height: auto; background: none; }
+.ph--shrink img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
 /* Dark backdrop for project cards showing app-screen covers */
 .ph--dark {
   background: #1C1C24;
@@ -428,7 +438,6 @@ body {
 .cs-meta-value a { color: var(--accent-text); font-weight: 600; }
 
 .cs-hero-image { max-width: 840px; margin: 0 auto; padding: 0 48px 8px; }
-.cs-hero-image .ph { aspect-ratio: auto; height: 472px; }
 
 .cs-lede { max-width: 840px; margin: 0 auto; padding: 64px 48px 8px; }
 .cs-pullquote {
@@ -452,6 +461,26 @@ body {
 .cs-image-block { margin: 24px 0; }
 .cs-image-row { display: flex; gap: 16px; }
 .cs-image-row .ph { aspect-ratio: auto; }
+
+.repost-grid {
+  columns: 2;
+  column-gap: 0.5rem;
+  margin: 24px 0;
+}
+.repost-tile {
+  position: relative;
+  break-inside: avoid;
+  margin-bottom: 0.5rem;
+}
+.repost-tile img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  transition: transform .2s ease;
+  transform-origin: center;
+}
+.repost-tile:hover { z-index: 10; }
+.repost-tile:hover img { transform: scale(1.5); }
 
 .cs-solution-label {
   font-size: 13px;
