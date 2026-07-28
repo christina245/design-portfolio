@@ -154,33 +154,29 @@
     <div class="eyebrow">04 — Solving seemingly irreconcilable problems</div>
     <h2 class="h2" style="margin-bottom:40px">The main design challenges</h2>
 
-    <h3 class="h3" style="margin-top:0">1. Knowledge isn't globally standardized</h3>
-    <p>Many comments fell along the lines of "You were taught that in school? I wasn't." Or: "My kid is being taught this now." A universal fact list would inevitably alienate many users.</p>
-    <img src="../assets/images/retrocodex-outdated-textbooks-2.png" alt="Outdated textbooks" class="cs-image-block" style="display:block;width:100%;height:auto;border-radius:10px">
-    <div class="cs-solution-label">SOLUTION</div>
-    <p>Instead of pretending every fact applied universally, I designed transparency directly into the experience. Every page explains that:</p>
-    <ul>
-      <li>educational experiences vary</li>
-      <li>facts learned aren't guaranteed to apply to everyone</li>
-      <li>science continues evolving</li>
-      <li>new discoveries happen gradually</li>
-    </ul>
-    <p>Rather than hiding uncertainty, the interface embraces it. Instead of authoritatively declaring "these are the lies you were taught", I aimed for a "this is what you <i>may have</i> been taught that was later disproven, or was already disproven when you learned it yet circulated anyway".</p>
-    <div class="ph ph--shrink"><img src="../assets/images/retrocodex-scrungy-disclaimer.png" alt="Disclaimer"></div>
-    <p style="margin-top:1rem;margin-bottom:1rem">Each fact entry also has a poll asking the user if they were taught the fact or not. The poll collects voluntary data and serves the UX perspective of reinforcing the site's ethos that learning varies.</p>
-    <div class="ph ph--shrink"><img src="../assets/images/retrocodex-poll.png" alt="Fact poll"></div>
-    <div class="cs-image-row" style="margin-bottom:12px">
-      <div class="ph" style="flex:1;height:200px"><span class="ph-label">homepage decades view — 360 × 200</span></div>
-      <div class="ph" style="flex:1;height:200px"><span class="ph-label">category page — 360 × 200</span></div>
-    </div>
-
-    <h3 class="h3">2. Most outdated facts don't have a single revision date</h3>
+    <h3 class="h3" style="margin-top:0">1. Most outdated facts don't have a single revision date</h3>
     <p>Even if a scientific study or sturdy historical evidence debunked a fact, my research told me that its teaching often continued to circulate in academia and/or in popular culture through community and media.</p>
-    
     <p>Assigning a single cutoff year would create false precision. The only facts I could assign single years to were ones that were officially overturned by an governing body, like a Food Pyramid revision or a country renaming or splitting. On the site, these fact cards are labeled "Official Revision" with the year they were revised.</p>
     <div class="cs-solution-label">DESIGN DECISION</div>
     <p>I organized knowledge by graduation decade instead of year. This approach is intended to accomodate gradual curriculum change.</p>
     <img src="../assets/images/retrocodex-decades-view.png" alt="Decades view" style="display:block;width:100%;height:auto;border-radius:10px">
+
+    <h3 class="h3">2. Education isn't always updated synchronously</h3>
+    <p>Many comments fell along the lines of "You were taught that in 1985? My kid is being taught this now even though it was disproven in the 1970s!" It was clear that many users had experiences being taught information that had been debunked before they were born.</p>
+    <p>Because of that, classifying the facts by a single year or even decade they were phased out of teaching would not lead to universally accurate results.</p>
+    <img src="../assets/images/retrocodex-outdated-textbooks-2.png" alt="Outdated textbooks" class="cs-image-block" style="display:block;width:100%;height:auto;border-radius:10px">
+    <div class="cs-solution-label">Design decision</div>
+    <p>Instead of pretending every fact was definitely debunked and was updated in academia and popular culture in a specific year, I ensured the user experience made these varying timelines clear. Every page explains that:</p>
+    <ul>
+      <li>several facts continued being taught years after they were disproven</li>
+      <li>the timeline of what is formally and informally taught varies throughout the world</li>
+      <li>knowledge in all categories is continuing to evolve</li>
+      <li>the factual and categorical accuracy of the site will be refined depending on user contributions </li>
+    </ul>
+    <p>Instead of authoritatively declaring "these are the lies you were taught", I aimed for a "this is what you <i>may have</i> been taught that was later disproven, or was already disproven when you learned it yet circulated anyway".</p>
+    <div class="ph ph--shrink"><img src="../assets/images/retrocodex-scrungy-disclaimer.png" alt="Disclaimer"></div>
+    <p style="margin-top:1rem;margin-bottom:1rem">Each fact entry also has a poll asking the user if they were taught the fact or not. The poll collects voluntary data and serves the UX perspective of reinforcing the site's ethos that learning varies.</p>
+    <div class="ph ph--shrink"><img src="../assets/images/retrocodex-poll.png" alt="Fact poll"></div>
 
     <h3 class="h3">3. Educational experiences are regional</h3>
     <p>Users consistently said: "Everything depends on where you went to school. If I went to school in South Africa, I don't expect to have learned the same facts as someone from California." Instead of treating location as metadata, I made it part of the product's social experience. Users can:</p>
@@ -194,9 +190,7 @@
     <img src="../assets/images/retrocodex-local-feed.png" alt="Local feed" style="display:block;width:100%;height:auto;border-radius:10px">
     <img src="../assets/images/retrocodex-comments-with-location.png" alt="Comments with location" style="display:block;width:100%;height:auto;border-radius:10px;margin-top:1rem">
     <img src="../assets/images/retrocodex-world-map.png" alt="World map" style="display:block;width:100%;height:auto;border-radius:10px;margin-top:1rem">
-    <div class="cs-image-row">
-      <div class="ph" style="flex:1;height:200px"><span class="ph-label">location modal — 236 × 200</span></div>
-    </div>
+    <img src="../assets/images/retrocodex-user-profile-following.png" alt="User profile following" style="display:block;width:100%;height:auto;border-radius:10px;margin-top:1rem">
   </div>
 </section>
 
@@ -231,11 +225,6 @@
       <li>historical context</li>
       <li>nuanced explanations instead of binary right/wrong language</li>
     </ul>
-    <div class="cs-image-row">
-      <div class="ph" style="flex:1;height:180px;background:var(--bg)"><span class="ph-label">citations — 236 × 180</span></div>
-      <div class="ph" style="flex:1;height:180px;background:var(--bg)"><span class="ph-label">nuance / controversy tab — 236 × 180</span></div>
-      <div class="ph" style="flex:1;height:180px;background:var(--bg)"><span class="ph-label">debated label — 236 × 180</span></div>
-    </div>
     <p style="margin-top:24px;margin-bottom:0">The goal was to encourage learning and critical thinking rather than adjudicating right and wrong.</p>
   </div>
 </section>
@@ -244,15 +233,10 @@
   <div class="eyebrow">07 — Further addressing the factual uncertainty</div>
   <h2 class="h2">Iterating out of criticism</h2>
   <p>I started promoting Retrocodex online in May 2026 primarily on Threads and Reddit. So far, the majority of the feedback has been positive.</p>
-  <div class="cs-image-row" style="margin-bottom:20px">
-    <div class="ph" style="flex:1;height:300px"><span class="ph-label">400 × 300</span></div>
-    <div class="ph" style="flex:1;height:300px"><span class="ph-label">400 × 300</span></div>
-  </div>
   <p>The vast majority of the negative feedback centered on a single theme: "I wasn't taught that!"</p>
   <p>I inferred that the disappointed users did not see the disclaimers acknowledging that the site's content could not possibly apply to each person and that its content was consistently revised through user submissions and comments. Surely many of the other users weren't taught many of the site's available facts, but they most likely saw the disclaimers.</p>
   <p>To address this consistent user pain point, I redesigned the disclaimer section that appeared above each fact list. I assumed some users were likely skipping the disclaimer section to read the facts, so I redesigned the disclaimers to be unskippable.</p>
-  <p>Instead of plain text sitting above the fact lists, the disclaimers now appear in a modal that always displays each time the user selects a decade on the homepage. Users are required to acknowledge each disclaimer before viewing the fact list:</p>
-  <div class="ph" style="width:700px;height:700px;margin:0 auto"><span class="ph-label">700 × 700</span></div>
+  <p>Instead of plain text sitting above the fact lists, the disclaimers now appear in a modal that always displays each time the user selects a decade on the homepage. Users are required to acknowledge each disclaimer before viewing the fact list.</p>
 </section>
 
 <section class="cs-section">
