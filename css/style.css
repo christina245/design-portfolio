@@ -437,7 +437,7 @@ body {
 .cs-meta-value { font-size: 15px; font-weight: 500; }
 .cs-meta-value a { color: var(--accent-text); font-weight: 600; }
 
-.cs-hero-image { max-width: 840px; margin: 0 auto; padding: 0 48px 8px; }
+.cs-hero-image { max-width: 840px; margin: 0 auto; padding: 0 48px 8px; display: flex; flex-direction: column; gap: 0.5rem; }
 
 .cs-lede { max-width: 840px; margin: 0 auto; padding: 64px 48px 8px; }
 .cs-pullquote {
@@ -450,6 +450,8 @@ body {
   margin: 0;
 }
 .cs-lede-note { font-size: 14px; line-height: 1.6; color: var(--muted); margin-top: 16px; }
+.cs-lede-list-intro { font-size: 16px; line-height: 1.7; margin: 20px 0 8px; }
+.cs-lede-list { padding-left: 22px; font-size: 16px; line-height: 1.9; margin: 0; }
 
 .cs-section { max-width: 840px; margin: 0 auto; padding: 64px 48px; }
 .cs-section-band { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
