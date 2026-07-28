@@ -323,7 +323,7 @@ body {
 /* ---------- Homepage ---------- */
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.3fr;
   gap: 64px;
   align-items: center;
   padding: 48px 2rem 72px;
