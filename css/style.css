@@ -283,6 +283,7 @@ body {
   height: auto;
   display: block;
   border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 /* Dark backdrop for project cards showing app-screen covers */
@@ -472,7 +473,7 @@ body {
 .repost-tile {
   position: relative;
   break-inside: avoid;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 .repost-tile img {
   width: 100%;
