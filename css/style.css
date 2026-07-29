@@ -485,6 +485,18 @@ body {
 .repost-tile:hover { z-index: 10; }
 .repost-tile:hover img { transform: scale(1.5); }
 
+/* Same expand-on-hover effect as the masonry grid, for individual images elsewhere */
+.hover-expand {
+  position: relative;
+  z-index: 1;
+  transition: transform .2s ease;
+  transform-origin: center;
+}
+.hover-expand:hover {
+  transform: scale(1.5);
+  z-index: 10;
+}
+
 .cs-solution-label {
   font-size: 13px;
   font-weight: 700;
