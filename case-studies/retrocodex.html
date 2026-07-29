@@ -83,13 +83,13 @@
 
   <h3 class="h3">How I addressed this, in a nutshell</h3>
   <ul>
-    <li>Disclaimers that content may not reflect each user's experience and is continuously updated</li>
-    <li>Facts classified by graduation decade rather than year</li>
-    <li>Interactive "Were you taught this" polls and comments</li>
-    <li>A world map classifying submissions by country</li>
-    <li>Registered users set a location and discover a feed of local facts and comments</li>
-    <li>Facts labeled with the years they were widely taught</li>
-    <li>Facts still circulating today are tagged and surfaced on every decade view</li>
+    <li>disclaimers that content may not reflect each user's experience and is continuously updated</li>
+    <li>facts classified by graduation decade rather than year</li>
+    <li>interactive "Were you taught this" polls and comments</li>
+    <li>a world map classifying submissions by country</li>
+    <li>registered users set a location and discover a feed of local facts and comments</li>
+    <li>facts labeled with the years they were widely taught</li>
+    <li>facts still circulating today are tagged and surfaced on every decade view</li>
   </ul>
 </section>
 
@@ -125,7 +125,7 @@
   <h2 class="h2">Designing the site</h2>
   <p>Alongside learning more about what outdated or untrue lessons people throughout the world were taught, I ran my own survey with 15 people interested in the concept, exploring their experiences discovering that parts of their education were outdated or untrue. I recruited participants from my friends and from general and social impact tech meetups in San Francisco.</p>
   <div class="ph ph--shrink cs-image-block"><img src="../assets/images/retrocodex-survey-responses.png" alt="Survey responses"></div>
-  <p style="margin-bottom:32px">For the site's encyclopedic content, I researched "common misconceptions we were taught" round-ups and chose 100 of the most commonly repeated facts — leaving the rest open for user submissions.</p>
+  <p style="margin-bottom:32px">For the site's encyclopedic content, I researched <a href="https://www.rd.com/list/facts-you-learned-no-longer-true/" class="link-accent-bold" target="_blank" rel="noopener noreferrer">"common misconceptions we were taught"</a> round-ups and chose 100 of the most commonly repeated facts — leaving the rest open for user submissions.</p>
 
   <p>While primary research was pending, I revisited the social discussions, this time focusing on comments discussing the website concept itself in a technical perspective beyond its factual content. Several concerns and feature demands kept surfacing. Users wanted:</p>
   <ul style="margin-bottom:28px">
@@ -154,18 +154,12 @@
     <div class="eyebrow">04 — Solving seemingly irreconcilable problems</div>
     <h2 class="h2" style="margin-bottom:40px">The main design challenges</h2>
 
-    <h3 class="h3" style="margin-top:0">1. Most outdated facts don't have a single revision date</h3>
-    <p>Even if a scientific study or sturdy historical evidence debunked a fact, my research told me that its teaching often continued to circulate in academia and/or in popular culture through community and media.</p>
-    <p>Assigning a single cutoff year would create false precision. The only facts I could assign single years to were ones that were officially overturned by an governing body, like a Food Pyramid revision or a country renaming or splitting. On the site, these fact cards are labeled "Official Revision" with the year they were revised.</p>
+    <h3 class="h3" style="margin-top:0">1. Most outdated facts took time to phase out of academia and popular culture, in some regions more than others</h3>
+    <p>Even if a scientific study or sturdy historical evidence debunked a fact, my research told me that its teaching often continued to circulate in academia and/or in popular culture through community and media. It often took several studies for a certain fact to phase out of repetition and many debunked myths continue to be still spread today, such as "you only use 10% of your brain".</p>
+    <p>Assigning a single cutoff year would create false precision and would not lead to universally accurate results.. The only facts I could assign single years to were ones that were officially overturned by an governing body, like a Food Pyramid revision or a country renaming or splitting. On the site, these fact cards are labeled "Official Revision" with the year they were revised.</p>
+    <p>Many social media user comments fell along the lines of "You were taught that in 1985? My kid is being taught this now even though it was disproven in the 1970s!" or "What school did you go to? When my girlfriend also went to school at the same time in the South, she was taught it the right way."</p>
+   
     <div class="cs-solution-label">DESIGN DECISION</div>
-    <p>I organized knowledge by graduation decade instead of year. This approach is intended to accomodate gradual curriculum change.</p>
-    <img src="../assets/images/retrocodex-decades-view.png" alt="Decades view" style="display:block;width:100%;height:auto;border-radius:10px">
-
-    <h3 class="h3">2. Education isn't always updated synchronously</h3>
-    <p>Many comments fell along the lines of "You were taught that in 1985? My kid is being taught this now even though it was disproven in the 1970s!" It was clear that many users had experiences being taught information that had been debunked before they were born.</p>
-    <p>Because of that, classifying the facts by a single year or even decade they were phased out of teaching would not lead to universally accurate results.</p>
-    <img src="../assets/images/retrocodex-outdated-textbooks-2.png" alt="Outdated textbooks" class="cs-image-block" style="display:block;width:100%;height:auto;border-radius:10px">
-    <div class="cs-solution-label">Design decision</div>
     <p>Instead of pretending every fact was definitely debunked and was updated in academia and popular culture in a specific year, I ensured the user experience made these varying timelines clear. Every page explains that:</p>
     <ul>
       <li>several facts continued being taught years after they were disproven</li>
@@ -173,13 +167,21 @@
       <li>knowledge in all categories is continuing to evolve</li>
       <li>the factual and categorical accuracy of the site will be refined depending on user contributions </li>
     </ul>
-    <p>Instead of authoritatively declaring "these are the lies you were taught", I aimed for a "this is what you <i>may have</i> been taught that was later disproven, or was already disproven when you learned it yet circulated anyway".</p>
+    <p>I organized knowledge by graduation decade instead of year. This approach is intended to accomodate gradual curriculum change.</p>
+    <img src="../assets/images/retrocodex-decades-view.png" alt="Decades view" style="display:block;width:100%;height:auto;border-radius:10px">
+
+    <h3 class="h3">2. Many users noticed that had been taught facts that they knew were already outdated that had been phased out for other users within the same time period.</h3>
+  <p>The original website prompt specifies facts that are revised after the user has finished school. However, many users reported being taught facts that had already been disproven at the time of teaching. </p>
+    <img src="../assets/images/retrocodex-outdated-textbooks-2.png" alt="Outdated textbooks" class="cs-image-block" style="display:block;width:100%;height:auto;border-radius:10px">
+    <div class="cs-solution-label">DESIGN DECISION</div>
+    
+    <p>Instead of authoritatively declaring "these are the lies you were taught", I aimed for a "this is what you <i>may have</i> been taught that was later disproven, or was already disproven when you learned it yet circulated anyway". This communicates that the site is inclusive of both facts that evolved <i>and</i>facts that were already outdated or a myth when users were taught them.</p>
     <div class="ph ph--shrink"><img src="../assets/images/retrocodex-scrungy-disclaimer.png" alt="Disclaimer"></div>
     <p style="margin-top:1rem;margin-bottom:1rem">Each fact entry also has a poll asking the user if they were taught the fact or not. The poll collects voluntary data and serves the UX perspective of reinforcing the site's ethos that learning varies.</p>
-    <div class="ph ph--shrink"><img src="../assets/images/retrocodex-poll.png" alt="Fact poll"></div>
+    <div class="ph ph--shrink"><img src="../assets/images/retrocodex-poll.png" alt="Fact poll" style="width:50%"></div>
 
     <h3 class="h3">3. Educational experiences are regional</h3>
-    <p>Users consistently said: "Everything depends on where you went to school. If I went to school in South Africa, I don't expect to have learned the same facts as someone from California." Instead of treating location as metadata, I made it part of the product's social experience. Users can:</p>
+    <p>As previously stated, regions varied when facts were phased out of teaching. However, <i>what</i> facts users were taught also varied by region. Users consistently said: "Everything depends on where you went to school. If I went to school in South Africa, I don't expect to have learned the same facts as someone from California." Instead of treating location as metadata, I made it part of the product's social experience. Users can:</p>
     <ul>
       <li>specify where they grew up</li>
       <li>discover users nearby</li>
@@ -196,10 +198,10 @@
 
 <section class="cs-section">
   <div class="eyebrow">05 — Information architecture for multiple fact discovery paths</div>
-  <h2 class="h2">What if "search by decade" wasn't including enough topics?</h2>
-  <p>Structuring the site by decade alone wouldn't be fully accurate — users from regions behind in curriculum updates may still be taught facts phased out elsewhere. As one respondent put it:</p>
-  <p class="cs-source-quote">"I know I graduated in 2004, but since I grew up in a poorly-funded region, I think there's a lot more I learned that may be currently outdated than I can see on the results for my graduation decade."</p>
-  <p>To accommodate that, the site can be explored through multiple dimensions:</p>
+  <h2 class="h2">Searching by decade won't include every available fact the user was taught.</h2>
+  <p>As previously mentioned, structuring the site by decade alone wouldn't be lead to full personalized accuracy — users from regions behind in curriculum updates may still be taught facts phased out elsewhere. As one respondent put it:</p>
+  <p class="cs-source-quote">"I know I graduated in 2004, but since I grew up in a poorly-funded region, I think there's a lot more I learned that may be currently outdated than I can see on the results for my graduation decade. What if those facts are classified in the other decades?"</p>
+  <p>To accommodate that, the site can be explored through multiple pathways:</p>
   <ul style="margin-bottom:28px">
     <li>graduation decade</li>
     <li>topic category</li>
@@ -221,11 +223,15 @@
       <li>citations on every fact</li>
       <li>revision timelines</li>
       <li>debate indicators</li>
-      <li>"Partially True" labels</li>
+      <li>"Partially True", "Context Matters", and "Uncertain" labels</li>
       <li>historical context</li>
       <li>nuanced explanations instead of binary right/wrong language</li>
     </ul>
     <p style="margin-top:24px;margin-bottom:0">The goal was to encourage learning and critical thinking rather than adjudicating right and wrong.</p>
+    <div class="cs-image-row" style="margin-top:24px">
+      <img src="../assets/images/retrocodex-uncertain-fact-1.png" alt="Uncertain fact" style="flex:1;min-width:0;width:100%;height:auto;border-radius:10px">
+      <img src="../assets/images/retrocodex-considerations.png" alt="Considerations" style="flex:1;min-width:0;width:100%;height:auto;border-radius:10px">
+    </div>
   </div>
 </section>
 
@@ -234,6 +240,7 @@
   <h2 class="h2">Iterating out of criticism</h2>
   <p>I started promoting Retrocodex online in May 2026 primarily on Threads and Reddit. So far, the majority of the feedback has been positive.</p>
   <p>The vast majority of the negative feedback centered on a single theme: "I wasn't taught that!"</p>
+  <img src="../assets/images/retrocodex-genx-1.png" alt="Gen X reaction" style="display:block;width:100%;height:auto;border-radius:10px">
   <p>I inferred that the disappointed users did not see the disclaimers acknowledging that the site's content could not possibly apply to each person and that its content was consistently revised through user submissions and comments. Surely many of the other users weren't taught many of the site's available facts, but they most likely saw the disclaimers.</p>
   <p>To address this consistent user pain point, I redesigned the disclaimer section that appeared above each fact list. I assumed some users were likely skipping the disclaimer section to read the facts, so I redesigned the disclaimers to be unskippable.</p>
   <p>Instead of plain text sitting above the fact lists, the disclaimers now appear in a modal that always displays each time the user selects a decade on the homepage. Users are required to acknowledge each disclaimer before viewing the fact list.</p>
@@ -261,6 +268,9 @@
     <li>Has been shared several times organically by users throughout Threads, LinkedIn, and Instagram</li>
   </ul>
   <p class="cs-pullquote">The project validated that a problem many believed couldn't be solved could be made approachable through careful and nuanced product design. I hope it'll continue to give everyone's brain a system update!</p>
+  <div style="margin-top:1rem">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tK1ctEZjF4w?si=2Yl48EUyTq4gZCDx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
 </section>
 
 <section class="cs-cta">

@@ -461,7 +461,7 @@ body {
 .cs-section h3 { margin-top: 40px; }
 
 .cs-image-block { margin: 24px 0; }
-.cs-image-row { display: flex; gap: 16px; }
+.cs-image-row { display: flex; align-items: flex-start; gap: 16px; }
 .cs-image-row .ph { aspect-ratio: auto; }
 
 .repost-grid {
