@@ -536,6 +536,13 @@ body {
   border-radius: 8px;
   display: block;
 }
+.phone-mockup-uniform img {
+  max-width: none;
+  width: 160px;
+  height: 320px;
+  object-fit: contain;
+}
+
 .phone-mockup-caption {
   width: 100%;
   text-align: center;
