@@ -517,13 +517,13 @@ body {
   border-radius: 8px;
   display: block;
 }
-.phone-mockup-group--compact { gap: 2rem; flex-wrap: nowrap; }
-.phone-mockup-group--compact img { max-width: 80px; }
-
 .phone-mockup-stack {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 .phone-mockup-row {
   display: flex;
