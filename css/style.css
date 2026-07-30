@@ -519,6 +519,26 @@ body {
 }
 .phone-mockup-group--compact { gap: 2rem; flex-wrap: nowrap; }
 .phone-mockup-group--compact img { max-width: 80px; }
+
+.phone-mockup-stack {
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.phone-mockup-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-end;
+}
+.phone-mockup-row img,
+.phone-mockup-stack > img {
+  max-width: 80px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
 .phone-mockup-caption {
   width: 100%;
   text-align: center;
