@@ -517,6 +517,8 @@ body {
   border-radius: 8px;
   display: block;
 }
+.phone-mockup-group--compact { gap: 2rem; flex-wrap: nowrap; }
+.phone-mockup-group--compact img { max-width: 80px; }
 .phone-mockup-caption {
   width: 100%;
   text-align: center;
