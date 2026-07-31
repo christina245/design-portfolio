@@ -573,23 +573,31 @@ body {
 }
 .pain-point-caption {
   max-width: 560px;
-  margin: 2rem auto 0;
+  margin: 1rem auto 0;
   font-size: 16px;
   line-height: 1.7;
+  text-align: center;
+}
+.pain-point-solution {
+  max-width: 560px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--muted);
   text-align: center;
 }
 .pain-point-arrow {
   background: none;
   border: 1px solid var(--border);
-  width: 36px;
-  height: 36px;
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--text);
-  font-size: 18px;
+  font-size: 27px;
   line-height: 1;
   font-family: inherit;
   flex-shrink: 0;
@@ -600,7 +608,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-top: 24px;
+  margin: 24px 0 1rem;
 }
 .pain-point-dot {
   width: 8px;
@@ -687,6 +695,15 @@ body {
   padding-left: 20px;
   margin: 0 0 24px;
   color: var(--muted);
+}
+.cs-source-quote-block { margin: 0 0 24px; }
+.cs-source-quote-block .cs-source-quote { margin: 0; }
+.cs-source-quote-attribution {
+  font-size: 15px;
+  font-style: italic;
+  color: var(--muted);
+  margin: 6px 0 0;
+  padding-left: 20px;
 }
 
 .cs-cta { max-width: 840px; margin: 0 auto; padding: 24px 48px 96px; text-align: center; }
