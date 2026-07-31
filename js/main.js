@@ -59,5 +59,25 @@
         }, showingA ? durA : durB);
       })();
     });
+
+    document.querySelectorAll('.pain-point-slider').forEach(function (slider) {
+      var slides = Array.prototype.slice.call(slider.querySelectorAll('.pain-point-slide'));
+      var dots = Array.prototype.slice.call(slider.querySelectorAll('.pain-point-dot'));
+      var prevBtn = slider.querySelector('.pain-point-arrow--prev');
+      var nextBtn = slider.querySelector('.pain-point-arrow--next');
+      var current = 0;
+
+      function show(i) {
+        current = (i + slides.length) % slides.length;
+        slides.forEach(function (slide, idx) { slide.hidden = idx !== current; });
+        dots.forEach(function (dot, idx) { dot.classList.toggle('is-active', idx === current); });
+      }
+
+      dots.forEach(function (dot, idx) {
+        dot.addEventListener('click', function () { show(idx); });
+      });
+      if (prevBtn) prevBtn.addEventListener('click', function () { show(current - 1); });
+      if (nextBtn) nextBtn.addEventListener('click', function () { show(current + 1); });
+    });
   });
 })();

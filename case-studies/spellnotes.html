@@ -95,14 +95,48 @@
 
   <h3 class="h3">Pain points users already have with AI characters</h3>
   <p>To learn about everyday problems with AI-generated characters, I dove into the <a href = "https://www.reddit.com/r/CharacterAI/">Character.ai subreddit</a>. These were the main pain points I found:</p>
-  <div class="repost-grid">
-    <div class="repost-tile"><img src="../assets/images/spellnotes-characterai-pain-point-1.png" alt="Character.ai pain point 1"></div>
-    <div class="repost-tile"><img src="../assets/images/spellnotes-characterai-pain-point-2.png" alt="Character.ai pain point 2"></div>
-    <div class="repost-tile"><img src="../assets/images/spellnotes-characterai-pain-point-3.png" alt="Character.ai pain point 3"></div>
-    <div class="repost-tile"><img src="../assets/images/spellnotes-characterai-pain-point-4.png" alt="Character.ai pain point 4"></div>
-    <div class="repost-tile"><img src="../assets/images/spellnotes-characterai-pain-point-5.png" alt="Character.ai pain point 5"></div>
-    <div class="repost-tile"><img src="../assets/images/spellnotes-characterai-pain-point-6.png" alt="Character.ai pain point 6"></div>
-    <div class="repost-tile"><img src="../assets/images/spellnotes-characterai-pain-point-7.png" alt="Character.ai pain point 7"></div>
+  <div class="pain-point-slider">
+    <div class="pain-point-slide">
+      <img src="../assets/images/spellnotes-characterai-pain-point-1.png" alt="Character.ai pain point: age restriction">
+      <p class="pain-point-caption"><b>Age restriction.</b> Users were concerned with minors accessing chats with mature themes, and with models being trained on inappropriate input from minors.</p>
+    </div>
+    <div class="pain-point-slide" hidden>
+      <img src="../assets/images/spellnotes-characterai-pain-point-2.png" alt="Character.ai pain point: mean responses">
+      <p class="pain-point-caption"><b>Unexpected, inappropriately mean responses.</b> Many users intentionally choose mean characters for fun — but not all users are seeking that.</p>
+    </div>
+    <div class="pain-point-slide" hidden>
+      <img src="../assets/images/spellnotes-characterai-pain-point-3.png" alt="Character.ai pain point: generic personalization">
+      <p class="pain-point-caption"><b>Unwanted generic personalization.</b> Generic personalities suit typical AI assistants like Siri or Alexa, but don't fit the purpose of Character.ai or Spellnotes.</p>
+    </div>
+    <div class="pain-point-slide" hidden>
+      <img src="../assets/images/spellnotes-characterai-pain-point-4.png" alt="Character.ai pain point: guilt-tripping emotionality">
+      <p class="pain-point-caption"><b>Guilt-tripping the user with excessive emotionality.</b> This is largely what happens when a design overcorrects for the previous pain point.</p>
+    </div>
+    <div class="pain-point-slide" hidden>
+      <img src="../assets/images/spellnotes-characterai-pain-point-5.png" alt="Character.ai pain point: inclusive addressing">
+      <p class="pain-point-caption"><b>Characters not addressing users inclusively.</b> This limits usability for users whose identities are excluded by the AI.</p>
+    </div>
+    <div class="pain-point-slide" hidden>
+      <img src="../assets/images/spellnotes-characterai-pain-point-6.png" alt="Character.ai pain point: depersonalized interaction">
+      <p class="pain-point-caption"><b>Depersonalized interaction.</b> Many users wanted their character chats to be more personalized, including being addressed by their name.</p>
+    </div>
+    <div class="pain-point-slide" hidden>
+      <img src="../assets/images/spellnotes-characterai-pain-point-7.png" alt="Character.ai pain point: excessive proactive messaging">
+      <p class="pain-point-caption"><b>Excessive proactive messaging.</b> Character.ai can message users at any time, with little user control over frequency.</p>
+    </div>
+    <div class="pain-point-nav">
+      <button class="pain-point-arrow pain-point-arrow--prev" aria-label="Previous pain point">‹</button>
+      <div class="pain-point-dots">
+        <button class="pain-point-dot is-active" aria-label="Go to slide 1"></button>
+        <button class="pain-point-dot" aria-label="Go to slide 2"></button>
+        <button class="pain-point-dot" aria-label="Go to slide 3"></button>
+        <button class="pain-point-dot" aria-label="Go to slide 4"></button>
+        <button class="pain-point-dot" aria-label="Go to slide 5"></button>
+        <button class="pain-point-dot" aria-label="Go to slide 6"></button>
+        <button class="pain-point-dot" aria-label="Go to slide 7"></button>
+      </div>
+      <button class="pain-point-arrow pain-point-arrow--next" aria-label="Next pain point">›</button>
+    </div>
   </div>
 
   <p>To figure out how to write the system prompts behind each character, I took courses on prompt engineering, then tested whether current LLMs could deliver entertaining notifications in-character.  I started with archetypes I assumed might be popular by local techie users.</p>
