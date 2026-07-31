@@ -613,6 +613,23 @@ body {
 }
 .pain-point-dot.is-active { background: var(--accent); }
 
+/* Fixed-height, vertically-centered image frame for slides with mixed aspect ratios */
+.principle-frame {
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.principle-frame img {
+  max-width: 480px;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
 .cs-solution-label {
   font-size: 13px;
   font-weight: 700;

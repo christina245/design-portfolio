@@ -200,14 +200,50 @@
     <li><b>Recognition over recall</b> — where possible, design for users to write prompts more easily, minimizing the cognitive load of recalling from scratch</li>
     <li><b>Confidence</b> — when output is likely uncertain, display a confidence meter or adjust system language to reflect that uncertainty</li>
   </ul>
-  <div class="repost-grid">
-    <div class="repost-tile"><img src="../assets/images/spellnotes-chatgpt-disclaimer.png" alt="ChatGPT disclaimer example"></div>
-    <div class="repost-tile"><img src="../assets/images/spellnotes-characterai-disclaimer.png" alt="Character.ai disclaimer example"></div>
-    <div class="repost-tile"><img src="../assets/images/spellnotes-hugging-face-bias.png" alt="Hugging Face bias example"></div>
-    <div class="repost-tile"><img src="../assets/images/spellnotes-grammarly-ai-toggles.png" alt="Grammarly AI toggle controls"></div>
-    <div class="repost-tile"><img src="../assets/images/spellnotes-microsoft-copilot.png" alt="Microsoft Copilot human-in-the-loop example"></div>
-    <div class="repost-tile"><img src="../assets/images/spellnotes-replit-web.png" alt="Replit explainability example"></div>
-    <div class="repost-tile"><img src="../assets/images/spellnotes-chronicle-web.png" alt="Chronicle transparency example"></div>
+  <div class="pain-point-slider principle-slider">
+    <div class="pain-point-stage">
+      <button class="pain-point-arrow pain-point-arrow--prev" aria-label="Previous design principle">‹</button>
+      <div class="pain-point-slides">
+        <div class="pain-point-slide">
+          <div class="principle-frame"><img src="../assets/images/spellnotes-chatgpt-disclaimer.png" alt="ChatGPT disclaimer example"></div>
+          <p class="pain-point-caption"><b>Transparency.</b> The system should inform users of its limitations, such as stating it can make mistakes or that its training data may be outdated.</p>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <div class="principle-frame"><img src="../assets/images/spellnotes-microsoft-copilot.png" alt="Microsoft Copilot human-in-the-loop example"></div>
+          <p class="pain-point-caption"><b>User feedback loops.</b> Users should be able to conveniently submit feedback on output quality to refine future output.</p>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <div class="principle-frame"><img src="../assets/images/spellnotes-replit-web.png" alt="Replit controllability example"></div>
+          <p class="pain-point-caption"><b>Controllability.</b> Users can intervene with AI decisions before final output.</p>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <div class="principle-frame"><img src="../assets/images/spellnotes-characterai-disclaimer.png" alt="Character.ai disclaimer example"></div>
+          <p class="pain-point-caption"><b>The anthropomorphism trap.</b> When bots mimic human personality, some users may overestimate their capability or reliability, assuming human-like common sense, empathy, or moral judgment.</p>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <div class="principle-frame"><img src="../assets/images/spellnotes-hugging-face-bias.png" alt="Hugging Face bias example"></div>
+          <p class="pain-point-caption"><b>Bias mitigation.</b> Training data may be biased and not perfectly inclusive of all users.</p>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <div class="principle-frame"><img src="../assets/images/spellnotes-chronicle-web.png" alt="Chronicle context example"></div>
+          <p class="pain-point-caption"><b>Context.</b> System output and interface must account for where, how, and why the AI is being used.</p>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <div class="principle-frame"><img src="../assets/images/spellnotes-grammarly-ai-toggles.png" alt="Grammarly AI toggle controls"></div>
+          <p class="pain-point-caption"><b>Necessity.</b> Designers should assess whether AI is actually substantially helpful to the user journey.</p>
+        </div>
+      </div>
+      <button class="pain-point-arrow pain-point-arrow--next" aria-label="Next design principle">›</button>
+    </div>
+    <div class="pain-point-dots">
+      <button class="pain-point-dot is-active" aria-label="Go to slide 1"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 2"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 3"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 4"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 5"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 6"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 7"></button>
+    </div>
   </div>
   <p class="cs-source-quote">"Trusted AI is built on transparency, accountability, and a commitment to accuracy." — Salesforce's Trusted AI Principles</p>
   <div class="ph ph--shrink"><img src="../assets/images/spellnotes-salesforce-ai-principles.png" alt="Salesforce Trusted AI Principles"></div>
