@@ -78,6 +78,9 @@
 body { margin: 0; }
 a { color: inherit; text-decoration: none; }
 a:hover, a:active { text-decoration: underline; }
+
+/* Body text links: always underlined and in the theme's accent color */
+p a { color: var(--accent-text); text-decoration: underline; }
 ul { margin: 0; }
 ::selection { background: #2F8693; color: #fff; }
 
@@ -538,8 +541,8 @@ body {
 }
 .phone-mockup-uniform img {
   max-width: none;
-  width: 160px;
-  height: 320px;
+  width: 240px;
+  height: 480px;
   object-fit: contain;
 }
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Spellnotes — Case Study | Christina</title>
+<title>Spellnotes: Product Design Case Study</title>
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -32,39 +32,40 @@
 <header class="cs-header">
   <div class="eyebrow">Case study — AI product design</div>
   <h1 class="h1">Spellnotes</h1>
-  <p class="cs-dek">Reimagine task management with fun AI characters. Character.ai meets task management — what if AI characters were the ones reminding you to go to the gym, buy that milk, or call your mom?</p>
+  <p class="cs-dek">Reimagine task management, but with fun fictional characters: what if AI characters were the ones reminding you to go to the gym, buy that milk, or call your mom?</p>
   <div class="cs-meta">
-    <div><div class="cs-meta-label">ROLE</div><div class="cs-meta-value">Solo product designer, researcher, and developer</div></div>
+    <div><div class="cs-meta-label">ROLE</div><div class="cs-meta-value">Solo product designer, UX researcher, and AI developer</div></div>
     <div><div class="cs-meta-label">TIMELINE</div><div class="cs-meta-value">June – July 2025</div></div>
     <div><div class="cs-meta-label">TOOLS</div><div class="cs-meta-value">Figma, Bolt</div></div>
-    <div><div class="cs-meta-label">CONTEXT</div><div class="cs-meta-value">Built for the World's Largest Hackathon</div></div>
+    <div><div class="cs-meta-label">CONTEXT</div><div class="cs-meta-value">Built for a hackathon</div></div>
   </div>
 </header>
 
-<div class="cs-hero-image">
-  <div class="ph ph--shrink"><img src="../assets/images/spellnotes-cover-2.gif" alt="Spellnotes notification preview"></div>
-  <div class="ph ph--shrink"><img src="../assets/images/spellnotes-cover-character.avif" alt="Spellnotes character profile"></div>
-</div>
+  <div class="phone-mockup-group phone-mockup-uniform" style="margin-top:1rem;margin-bottom:1rem">
+    <img src="../assets/images/spellnotes-homescreen-mockup.png" alt="Spellnotes home screen">
+    <img src="../assets/images/spellnotes-muffin-generated-notification-mockup.gif" alt="Muffin-generated notification example">
+    <img src="../assets/images/spellnotes-user-adding-notification-mockup.gif" alt="User adding a new notification">
+  </div>
 
 <div class="cs-lede">
-  <p class="cs-pullquote">What if your task manager actually understood who you are, not just what you do? Spellnotes has your task reminders delivered by an AI character of your choice, making such reminders entertaining instead of tedious.</p>
+  <p class="cs-pullquote">What if your task manager spoke to who you are, not just what you do? Spellnotes has your task reminders delivered by an AI character of your choice, making mundane task reminders entertaining instead of tedious and generic.</p>
   <p class="cs-lede-note">Note: while this is a generative AI app, it is not conversational — users can't respond to notifications with text, and all characters are 100% original.</p>
 </div>
 
 <section class="cs-section">
   <div class="eyebrow">01 — The problem and the pitch</div>
-  <h2 class="h2">Task management felt impersonal</h2>
-  <p>Task management apps are typically designed in a one-size-fits-all manner, promoted in a way that doesn't take into account the bigger picture of a user's life goals. When they do try, the UI is typically cluttered and difficult to navigate. Notifications are simple and mundane, either written in preconfigured text by the app or written by the user, and it takes too much work to jot down reminders on the go and configure delivery times.</p>
+  <h2 class="h2">Current reminder apps are boring and/or hard to use</h2>
+  <p>Task management apps are typically boring and have cluttered UI. Notifications are easy to ignore, leading to missed tasks and procrastination.</p>
   <div class="cs-solution-label">SOLUTION</div>
-  <p>Spellnotes introduces a large library of AI assistants with distinct personalities that adapt to user lifestyles and goals. Instead of generic task notifications, users receive contextually relevant reminders — creating a personalized, entertaining productivity experience with a relatively simple, intuitive layout that makes it easy to jot down reminders on the go.</p>
+  <p>Spellnotes introduces a large library of AI assistants with distinct personalities that adapt to user lifestyles and goals. Instead of generic reminders, users receive contextually relevant reminders — creating a personalized, entertaining productivity experience with a relatively simple, intuitive layout that makes it easy to jot down reminders on the go.</p>
 </section>
 
 <section class="cs-section-band">
   <div class="cs-section">
-    <div class="eyebrow">02 — Researching ethical AI design</div>
+    <div class="eyebrow">02 — Learning ethical consumer AI design</div>
     <h2 class="h2">Proceeding with caution</h2>
-    <p>After learning more about the risks of consumer AI, I researched how to design AI interfaces to account for those risks. I understood that design alone couldn't 100% prevent misuse, but having several avenues for users to submit feedback to app admins — and to the system itself — would help mitigate unwanted output.</p>
-    <p>Beyond the extreme, well-publicized cases, I also realized it was critical to study the everyday risks of LLMs.</p>
+    <p>After becoming aware of the risks of consumer AI such as hallucinations, AI psychosis, and more, I knew it was critical to study how to design AI interfaces to account for those risks. I understood that design alone couldn't 100% prevent misuse, but certain designs would help mitigate unwanted system output and user behavior.</p>
+  
     <div class="ph ph--shrink"><img src="../assets/images/spellnotes-risks-of-llms.png" alt="Everyday risks of LLMs, from Scale AI"></div>
     <p>I worked through a reading list on AI interface design — including <i>UX for AI</i> and an AI Product Design certification — alongside several articles on human-centered, accessible, and transparent AI interfaces.</p>
     <div class="cs-image-row" style="margin-bottom:1rem">
@@ -75,7 +76,7 @@
 </section>
 
 <section class="cs-section">
-  <div class="eyebrow">03 — Studying the competition</div>
+  <div class="eyebrow">03 — Studying the existing examples</div>
   <h2 class="h2">Key lessons in AI interface design</h2>
   <h3 class="h3" style="margin-top:0">What mental models have users already built from task and AI companion apps?</h3>
   <p>Since I couldn't find any task management app with AI companions, I knew Spellnotes was going to introduce an unfamiliar experience — a real usability risk. To design something intuitive despite that, I studied current task management and AI companion apps, taking note of shared patterns in information hierarchy and new-task creation flows, like Todoist's notification structure and how a plain-text app compares to Spellnotes' character-voiced approach.</p>
@@ -83,7 +84,7 @@
     <img src="../assets/images/spellnotes-todoist-notifications-mockup.png" alt="Todoist notifications, for comparison">
     <img src="../assets/images/spellnotes-vs-spellnote.png" alt="Plain text app compared to Spellnotes">
   </div>
-  <p style="margin-top:1rem">Below is how other AI companion apps structure their character profile pages, often including usage frequency and other metrics as social proof.</p>
+  <p style="margin-top:1rem">Below is how other AI companion apps structure their character profile pages, often including usage frequency and other metrics as social proof:</p>
   <div class="repost-grid">
     <div class="repost-tile"><img src="../assets/images/spellnotes-nomi-ai-1.png" alt="Nomi AI character profile"></div>
     <div class="repost-tile"><img src="../assets/images/spellnotes-kindroid-profile.png" alt="Kindroid character profile"></div>
@@ -93,7 +94,7 @@
   </div>
 
   <h3 class="h3">Pain points users already have with AI characters</h3>
-  <p>To learn about everyday problems with AI-generated characters, I dove into the Character.ai subreddit. These were the main pain points I found:</p>
+  <p>To learn about everyday problems with AI-generated characters, I dove into the <a href = "https://www.reddit.com/r/CharacterAI/">Character.ai subreddit</a>. These were the main pain points I found:</p>
   <div class="repost-grid">
     <div class="repost-tile"><img src="../assets/images/spellnotes-characterai-pain-point-1.png" alt="Character.ai pain point 1"></div>
     <div class="repost-tile"><img src="../assets/images/spellnotes-characterai-pain-point-2.png" alt="Character.ai pain point 2"></div>
@@ -104,21 +105,22 @@
     <div class="repost-tile"><img src="../assets/images/spellnotes-characterai-pain-point-7.png" alt="Character.ai pain point 7"></div>
   </div>
 
-  <p>To figure out how to write the backend system prompts behind each character, I took courses on prompt engineering, then tested whether current LLMs could deliver entertaining notifications in-character. Throughout testing on Character.ai, it was clear current LLMs are well-suited to mimicking a variety of character voices — but were they suited to delivering everyday task reminders in character? I tested a handful of reminders on Claude, providing a detailed description of the app and each character. The character concepts themselves are my own, not AI-generated — I started with archetypes I assumed might be locally popular in Silicon Valley.</p>
+  <p>To figure out how to write the system prompts behind each character, I took courses on prompt engineering, then tested whether current LLMs could deliver entertaining notifications in-character.  I started with archetypes I assumed might be popular by local techie users.</p>
   <div class="repost-grid">
     <div class="repost-tile"><img src="../assets/images/spellnotes-silicon-valley-techie-notifications.png" alt="Silicon Valley Techie notification example"></div>
     <div class="repost-tile"><img src="../assets/images/spellnotes-spaceship-ai-notifications.png" alt="Spaceship AI notification example"></div>
     <div class="repost-tile"><img src="../assets/images/spellnotes-board-game-cafe-notifications.png" alt="Board Game Cafe Regular notification example"></div>
   </div>
-  <p style="margin-top:24px">I only tested model responses with mundane, simple, common reminders — I assumed many users would enter more complex or possibly inappropriate reminders in an attempt to troll or evoke an emotionally intimate (or worse) response, and I didn't feel equipped to handle that kind of undesirable behavior on my own.</p>
+  <p style="margin-top:24px">Note: I only tested model responses with mundane, simple, common reminders — I assumed many users would enter more complex or possibly inappropriate reminders in an attempt to troll or evoke an emotionally intimate (or worse) response, and I didn't feel equipped to handle that kind of undesirable behavior on my own.</p>
   <p>That's why, if I could hire a team to fully develop this product, I'd choose AI-savvy engineers committed to programming strong guardrails into each character to handle inappropriate requests and detect emotionally risky behavior, such as suicidal ideation. The team and I would test each character against a wide range of potential input, informed by more in-depth primary user research.</p>
 </section>
 
 <section class="cs-section-band">
   <div class="cs-section">
-    <div class="eyebrow">04 — Diversity and inclusion</div>
-    <h2 class="h2">What will these characters look like?</h2>
+    <div class="eyebrow">04 — Designing for inclusivity </div>
+    <h2 class="h2">Who would these characters be? How would they look?</h2>
     <p>I was committed to making the characters diverse in every way, without reflecting societal stereotypes. For the sake of the hackathon's time limit, I used OpenAI's Sora to generate placeholder images and used non-human characters for demo purposes. With unlimited time and budget, I'd instead design and develop a character customizer like the ones used in video games for human or humanoid characters — letting each user customize features like skin and hair color to reflect their own identity.</p>
+    <img src="../assets/images/spellnotes-character-customization.jpeg" alt="Character customization concept" style="display:block;width:100%;height:auto;border-radius:10px;margin-bottom:1rem">
 
     <h3 class="h3">Six pain points, and how I addressed each</h3>
     <p><b>1. Age restriction.</b> Users were concerned with minors accessing chats with mature themes, like characters with emotionally traumatizing backstories, and with models being trained on inappropriate input from minors.</p>
