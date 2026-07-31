@@ -78,7 +78,7 @@
 <section class="cs-section">
   <div class="eyebrow">03 — Studying the existing examples</div>
   <h2 class="h2">Key lessons in AI interface design</h2>
-  <h3 class="h3" style="margin-top:0">What mental models have users already built from task and AI companion apps?</h3>
+  <h3 class="h3" style="margin-top:0">What mental models have users already developed from task management and AI companion apps?</h3>
   <p>Since I couldn't find any task management app with AI companions, I knew Spellnotes was going to introduce an unfamiliar experience — a real usability risk. To design something intuitive despite that, I studied current task management and AI companion apps, taking note of shared patterns in information hierarchy and new-task creation flows, like Todoist's notification structure and how a plain-text app compares to Spellnotes' character-voiced approach.</p>
   <div class="phone-mockup-group">
     <img src="../assets/images/spellnotes-todoist-notifications-mockup.png" alt="Todoist notifications, for comparison">
@@ -96,46 +96,48 @@
   <h3 class="h3">Pain points users already have with AI characters</h3>
   <p>To learn about everyday problems with AI-generated characters, I dove into the <a href = "https://www.reddit.com/r/CharacterAI/">Character.ai subreddit</a>. These were the main pain points I found:</p>
   <div class="pain-point-slider">
-    <div class="pain-point-slide">
-      <img src="../assets/images/spellnotes-characterai-pain-point-1.png" alt="Character.ai pain point: age restriction">
-      <p class="pain-point-caption"><b>Age restriction.</b> Users were concerned with minors accessing chats with mature themes, and with models being trained on inappropriate input from minors.</p>
-    </div>
-    <div class="pain-point-slide" hidden>
-      <img src="../assets/images/spellnotes-characterai-pain-point-2.png" alt="Character.ai pain point: mean responses">
-      <p class="pain-point-caption"><b>Unexpected, inappropriately mean responses.</b> Many users intentionally choose mean characters for fun — but not all users are seeking that.</p>
-    </div>
-    <div class="pain-point-slide" hidden>
-      <img src="../assets/images/spellnotes-characterai-pain-point-3.png" alt="Character.ai pain point: generic personalization">
-      <p class="pain-point-caption"><b>Unwanted generic personalization.</b> Generic personalities suit typical AI assistants like Siri or Alexa, but don't fit the purpose of Character.ai or Spellnotes.</p>
-    </div>
-    <div class="pain-point-slide" hidden>
-      <img src="../assets/images/spellnotes-characterai-pain-point-4.png" alt="Character.ai pain point: guilt-tripping emotionality">
-      <p class="pain-point-caption"><b>Guilt-tripping the user with excessive emotionality.</b> This is largely what happens when a design overcorrects for the previous pain point.</p>
-    </div>
-    <div class="pain-point-slide" hidden>
-      <img src="../assets/images/spellnotes-characterai-pain-point-5.png" alt="Character.ai pain point: inclusive addressing">
-      <p class="pain-point-caption"><b>Characters not addressing users inclusively.</b> This limits usability for users whose identities are excluded by the AI.</p>
-    </div>
-    <div class="pain-point-slide" hidden>
-      <img src="../assets/images/spellnotes-characterai-pain-point-6.png" alt="Character.ai pain point: depersonalized interaction">
-      <p class="pain-point-caption"><b>Depersonalized interaction.</b> Many users wanted their character chats to be more personalized, including being addressed by their name.</p>
-    </div>
-    <div class="pain-point-slide" hidden>
-      <img src="../assets/images/spellnotes-characterai-pain-point-7.png" alt="Character.ai pain point: excessive proactive messaging">
-      <p class="pain-point-caption"><b>Excessive proactive messaging.</b> Character.ai can message users at any time, with little user control over frequency.</p>
-    </div>
-    <div class="pain-point-nav">
+    <div class="pain-point-stage">
       <button class="pain-point-arrow pain-point-arrow--prev" aria-label="Previous pain point">‹</button>
-      <div class="pain-point-dots">
-        <button class="pain-point-dot is-active" aria-label="Go to slide 1"></button>
-        <button class="pain-point-dot" aria-label="Go to slide 2"></button>
-        <button class="pain-point-dot" aria-label="Go to slide 3"></button>
-        <button class="pain-point-dot" aria-label="Go to slide 4"></button>
-        <button class="pain-point-dot" aria-label="Go to slide 5"></button>
-        <button class="pain-point-dot" aria-label="Go to slide 6"></button>
-        <button class="pain-point-dot" aria-label="Go to slide 7"></button>
+      <div class="pain-point-slides">
+        <div class="pain-point-slide">
+          <img src="../assets/images/spellnotes-characterai-pain-point-1.png" alt="Character.ai pain point: age restriction">
+          <p class="pain-point-caption"><b>Age restriction.</b> Users were concerned with minors accessing chats with mature themes, and with models being trained on inappropriate input from minors.</p>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <img src="../assets/images/spellnotes-characterai-pain-point-2.png" alt="Character.ai pain point: mean responses">
+          <p class="pain-point-caption"><b>Unexpected, inappropriately mean responses.</b> Many users intentionally choose mean characters for fun — but not all users are seeking that.</p>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <img src="../assets/images/spellnotes-characterai-pain-point-3.png" alt="Character.ai pain point: generic personalization">
+          <p class="pain-point-caption"><b>Unwanted generic personalization.</b> Generic personalities suit typical AI assistants like Siri or Alexa, but don't fit the purpose of Character.ai or Spellnotes.</p>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <img src="../assets/images/spellnotes-characterai-pain-point-4.png" alt="Character.ai pain point: guilt-tripping emotionality">
+          <p class="pain-point-caption"><b>Guilt-tripping the user with excessive emotionality.</b> This is largely what happens when a design overcorrects for the previous pain point.</p>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <img src="../assets/images/spellnotes-characterai-pain-point-5.png" alt="Character.ai pain point: inclusive addressing">
+          <p class="pain-point-caption"><b>Characters not addressing users inclusively.</b> This limits usability for users whose identities are excluded by the AI.</p>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <img src="../assets/images/spellnotes-characterai-pain-point-6.png" alt="Character.ai pain point: depersonalized interaction">
+          <p class="pain-point-caption"><b>Depersonalized interaction.</b> Many users wanted their character chats to be more personalized, including being addressed by their name.</p>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <img src="../assets/images/spellnotes-characterai-pain-point-7.png" alt="Character.ai pain point: excessive proactive messaging">
+          <p class="pain-point-caption"><b>Excessive proactive messaging.</b> Character.ai can message users at any time, with little user control over frequency.</p>
+        </div>
       </div>
       <button class="pain-point-arrow pain-point-arrow--next" aria-label="Next pain point">›</button>
+    </div>
+    <div class="pain-point-dots">
+      <button class="pain-point-dot is-active" aria-label="Go to slide 1"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 2"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 3"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 4"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 5"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 6"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 7"></button>
     </div>
   </div>
 
@@ -153,7 +155,7 @@
   <div class="cs-section">
     <div class="eyebrow">04 — Designing for inclusivity </div>
     <h2 class="h2">Who would these characters be? How would they look?</h2>
-    <p>I was committed to making the characters diverse in every way, without reflecting societal stereotypes. For the sake of the hackathon's time limit, I used OpenAI's Sora to generate placeholder images and used non-human characters for demo purposes. With unlimited time and budget, I'd instead design and develop a character customizer like the ones used in video games for human or humanoid characters — letting each user customize features like skin and hair color to reflect their own identity.</p>
+    <p>I was committed to making the characters diverse in every way, without reflecting societal stereotypes. For the sake of the hackathon's time limit, I used OpenAI's Sora to generate placeholder images and used non-human characters for demo purposes.</p><p>With unlimited time and budget, I'd instead design and develop a character customizer like the ones used in video games for human or humanoid characters — letting each user customize features like skin and hair color to reflect their own identity.</p>
     <img src="../assets/images/spellnotes-character-customization.jpeg" alt="Character customization concept" style="display:block;width:100%;height:auto;border-radius:10px;margin-bottom:1rem">
 
     <h3 class="h3">Six pain points, and how I addressed each</h3>
