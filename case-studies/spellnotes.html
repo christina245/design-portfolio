@@ -62,7 +62,21 @@
 
 <section class="cs-section-band">
   <div class="cs-section">
-    <div class="eyebrow">02 — Learning ethical consumer AI design</div>
+    <div class="eyebrow">02 — Real-world stakes</div>
+    <h2 class="h2">Not wanting to deal with potential disastrous consequences</h2>
+    <p>Because of these risks, my research and design process was rather non-linear — I started by learning about the negative impact of consumer-facing chatbots like ChatGPT and Character.ai, the product most similar to mine. That research set the foundation for every human-centered design decision that followed.</p>
+    <p style="margin-bottom:8px">Some of the devastating consequences of generative AI misuse include:</p>
+    <div class="cs-quote-stack">
+      <div>😞 In October 2024, Megan Garcia filed a federal lawsuit claiming Character.ai was responsible for the death of her 14-year-old son, Sewell Setzer III, who died by suicide after spending months interacting with a chatbot on the platform — among the character's last messages were suggestions that he take his own life.</div>
+      <div>😞 Mental health professionals have increasingly reported "AI psychosis" — psychological distress from unhealthy relationships with AI systems, including over-attachment, confusion about AI capabilities, or difficulty distinguishing AI responses from human interaction.</div>
+      <div>😞 Character.ai has faced multiple lawsuits over user-created bots of copyrighted characters, leading to large-scale deletions of user-created characters and disappointment from users who received no prior notice of the deletion drive.</div>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section-band">
+  <div class="cs-section">
+    <div class="eyebrow">03 — Learning ethical consumer AI design</div>
     <h2 class="h2">Proceeding with caution</h2>
     <p>After becoming aware of the risks of consumer AI such as hallucinations, AI psychosis, and more, I knew it was critical to study how to design AI interfaces to account for those risks. I understood that design alone couldn't 100% prevent misuse, but certain designs would help mitigate unwanted system output and user behavior.</p>
   
@@ -76,7 +90,7 @@
 </section>
 
 <section class="cs-section">
-  <div class="eyebrow">03 — Studying the existing examples</div>
+  <div class="eyebrow">04 — Studying the existing examples</div>
   <h2 class="h2">Key lessons in AI interface design</h2>
   <h3 class="h3" style="margin-top:0">What mental models have users already developed from task management and AI companion apps?</h3>
   <p>Since I couldn't find any task management app with AI companions, I knew Spellnotes was going to introduce an unfamiliar experience — a real usability risk. To design something intuitive despite that, I studied current task management and AI companion apps, taking note of shared patterns in information hierarchy and new-task creation flows, like Todoist's notification structure and how a plain-text app compares to Spellnotes' character-voiced approach.</p>
@@ -167,7 +181,7 @@
 
 <section class="cs-section-band">
   <div class="cs-section">
-    <div class="eyebrow">04 — Designing for inclusivity </div>
+    <div class="eyebrow">05 — Designing for inclusivity </div>
     <h2 class="h2">Who would these characters be? How would they look?</h2>
     <p>I was committed to making the characters diverse in every way, without reflecting societal stereotypes. For the sake of the hackathon's time limit, I used OpenAI's Sora to generate placeholder images and used non-human characters for demo purposes.</p><p>With unlimited time and budget, I'd instead design and develop a character customizer like the ones used in video games for human or humanoid characters — letting each user customize features like skin and hair color to reflect their own identity.</p>
     <img src="../assets/images/spellnotes-character-customization.jpeg" alt="Character customization concept" style="display:block;width:100%;height:auto;border-radius:10px;margin-bottom:1rem">
@@ -175,7 +189,7 @@
 </section>
 
 <section class="cs-section">
-  <div class="eyebrow">05 — Design principles</div>
+  <div class="eyebrow">06 — Design principles</div>
   <h2 class="h2">AI interface design principles I designed around</h2>
   <div class="pain-point-slider principle-slider">
     <div class="pain-point-stage">
@@ -231,11 +245,11 @@
 
 <section class="cs-section-band">
   <div class="cs-section">
-    <div class="eyebrow">06 — From mockup to code</div>
+    <div class="eyebrow">07 — From mockup to code</div>
     <h2 class="h2">Designing for an unfamiliar product</h2>
     <p>Designing something genuinely unprecedented was going to pose a challenge for intuitiveness and trust. I assumed new users wouldn't intuitively figure out how to use the app efficiently, and that some users might be at risk of becoming excessively emotionally dependent on it.</p>
     <div class="cs-solution-label">SOLUTION</div>
-    <p>An onboarding process that clearly walks users through the app's most distinctive features and branding, while introducing the characters' boundaries through Community Guidelines: they're casual assistants created for entertainment, not emotionally intimate companions or therapists. I kicked off onboarding with reminders that Spellnotes is built for everyday scenarios — like "a list of clapbacks for the next family reunion," not just "go to the gym" — reinforcing its value beyond the AI characters themselves.</p>
+    <p>An onboarding process that clearly walks users through the app's most distinctive features and branding, while introducing the characters' limits through Community Guidelines: they're casual assistants created for entertainment, not emotionally intimate companions or therapists. I kicked off onboarding with reminders that Spellnotes is built for everyday scenarios — like "a list of clapbacks for the next family reunion," not just "go to the gym" — reinforcing its value beyond the AI characters themselves.</p>
     <div class="phone-mockup-group">
       <img src="../assets/images/spellnotes-phone-verification-mockup.gif" alt="Phone verification onboarding screen">
       <img src="../assets/images/spellnotes-first-notification-setup-mockup.gif" alt="First notification setup onboarding screen">
@@ -244,25 +258,27 @@
 </section>
 
 <section class="cs-section">
-  <div class="eyebrow">07 — Personalization</div>
-  <h2 class="h2">Designing for user personalization</h2>
+  <div class="eyebrow">08 — Personalization</div>
+  <h2 class="h2">Customizing character dialogue</h2>
   <p>One unique feature of Spellnotes is that users are encouraged to fill out a profile so their chosen AI assistant can personalize reminder messages — including entering their goals, as is common on other task apps. The difference here is that goal input further personalizes the generated AI reminders themselves.</p>
   <p>Task reminders in the voice of an AI character are pretty much unheard of, so I assumed some users would be skeptical of how useful or entertaining the app would be for their specific use case.</p>
   <div class="cs-solution-label">SOLUTION</div>
   <p>During onboarding, users can optionally set up a single notification and select one character to deliver it, with a preview of what it'll look like — quickly familiarizing them with an unfamiliar mental model and their future user journey.</p>
   <div class="phone-mockup-group phone-mockup-uniform" style="margin-top:1rem;margin-bottom:1rem">
-    <img src="../assets/images/spellnotes-homescreen-mockup.png" alt="Spellnotes home screen">
+    <img src="../assets/images/first notification setup mockup.gif" alt="User adding a new notification">
+     <img src="../assets/images/spellnotes-character-trait-selection-mockup.gif" alt="User adding a new notification">
+    <img src="../assets/images/muffin character selection mockup.gif" alt="Muffin-generated notification example">
     <img src="../assets/images/spellnotes-muffin-generated-notification-mockup.gif" alt="Muffin-generated notification example">
-    <img src="../assets/images/spellnotes-user-adding-notification-mockup.gif" alt="User adding a new notification">
+    
   </div>
-  <p style="margin-top:1rem">To narrow down which AI character best suits a new user, I designed a simple trait selection screen similar to ones users likely already know from platforms like Reddit — mine uses generative UI, surfacing new traits depending on what the user selects.</p>
+  
   <p>After selecting their first assistant and setting up their first notification, users land on their home screen — designed like a simpler version of the other task apps I studied, with one core objective: let users jot down a note and reminder time as quickly as possible.</p>
   <div class="phone-mockup-group">
     <img src="../assets/images/spellnotes-homescreen-mockup.png" alt="Spellnotes home screen">
-    <img src="../assets/images/spellnotes-muffin-generated-notification-mockup.gif" alt="Muffin-generated notification example">
-    <img src="../assets/images/spellnotes-user-adding-notification-mockup.gif" alt="User adding a new notification">
+    <img src="../assets/images/user adding notification mockup.gif" alt="Spellnotes home screen">
+    
   </div>
-  <p style="margin-top:1rem">Not all notifications need to be spoken through a character's voice — they don't need to know everything about us. That's why every reminder has the option to be delivered exactly as the user entered it, with no AI modification. The single notification screen is designed to align with the human-in-the-loop principles mentioned earlier, similar to what you'd see on ChatGPT or Microsoft Copilot.</p>
+  <p style="margin-top:1rem">Not all notifications need to be spoken through a character's voice — they don't need to know everything about us. That's why every reminder has the option to be delivered exactly as the user entered it, with no AI modification. </p>
 
   <h3 class="h3">Designing for emotional safety</h3>
   <p>As discussed earlier, frequent interaction with AI that mimics humans is strongly associated with emotional risk, like excessive attachment.</p>
@@ -270,31 +286,17 @@
   <p>At least one page is dedicated to these issues, so users are aware of the risks and can quickly access mental health resources — just in case some are already experiencing symptoms while using the app. There's also in-app feedback submission.</p>
   <div class="phone-mockup-group">
     <img src="../assets/images/spellnotes-view-resources-mockup.gif" alt="Mental health resources screen">
-    <img src="../assets/images/spellnotes-view-resources-mockup-alt.gif" alt="Mental health resources screen, alternate view">
+    
   </div>
   <p style="margin-top:24px">AI characters are also prone to unwanted, unsettling output. I designed feedback loop mechanisms into the notifications themselves, but assume those may not always be enough for more severely unhinged AI behavior.</p>
   <div class="cs-solution-label">SOLUTION</div>
   <p>Users can report a character directly from its profile page, and submit any other concerns right in the app rather than having to send an email.</p>
   <div class="phone-mockup-group">
     <img src="../assets/images/spellnotes-report-an-issue-mockup.gif" alt="Reporting an issue with a character">
-    <img src="../assets/images/spellnotes-report-issue-submit-feedback-mockup.gif" alt="Submitting feedback about a character">
+    
   </div>
   <p style="margin-top:24px">Spellnotes also lets you save any task in plain text, so you can read it as written without an AI character involved — just like on any other task management app.</p>
   <p class="cs-lede-note">Reflection: I later changed Muffin the Fluffy Bunny's character trait from "caring" to "practical," realizing that describing an AI as "caring" might inadvertently evoke emotional attachment.</p>
-</section>
-
-<section class="cs-section-band">
-  <div class="cs-section">
-    <div class="eyebrow">08 — Real-world stakes</div>
-    <h2 class="h2">Consumer AI has had real, disastrous consequences</h2>
-    <p>Because of these risks, my research and design process was rather non-linear — I started by learning about the negative impact of consumer-facing chatbots like ChatGPT and Character.ai, the product most similar to mine. That research set the foundation for every human-centered design decision that followed.</p>
-    <p style="margin-bottom:8px">Some of the devastating consequences of generative AI misuse include:</p>
-    <div class="cs-quote-stack">
-      <div>😞 In October 2024, Megan Garcia filed a federal lawsuit claiming Character.ai was responsible for the death of her 14-year-old son, Sewell Setzer III, who died by suicide after spending months interacting with a chatbot on the platform — among the character's last messages were suggestions that he take his own life.</div>
-      <div>😞 Mental health professionals have increasingly reported "AI psychosis" — psychological distress from unhealthy relationships with AI systems, including over-attachment, confusion about AI capabilities, or difficulty distinguishing AI responses from human interaction.</div>
-      <div>😞 Character.ai has faced multiple lawsuits over user-created bots of copyrighted characters, leading to large-scale deletions of user-created characters and disappointment from users who received no prior notice of the deletion drive.</div>
-    </div>
-  </div>
 </section>
 
 <section class="cs-section">
@@ -308,10 +310,10 @@
 </section>
 
 <section class="cs-cta">
-  <h2 class="h2">Want to hear more about the research behind this one?</h2>
-  <p class="cs-dek" style="margin:0 auto 32px">Get in touch — I love talking through the ethics side of AI product design.</p>
+  <h2 class="h2">View the non-AI version of this app</h2>
+  <p class="cs-dek" style="margin:0 auto 32px">I later made another non-AI to-do list app inspired by this one.</p>
   <div class="cs-cta-actions">
-    <a href="../contact.html" class="cs-btn cs-btn--primary" target="_blank" rel="noopener noreferrer">Get in touch</a>
+    <a href="http://iconictasks.com" class="cs-btn cs-btn--primary" target="_blank" rel="noopener noreferrer">See app</a>
   </div>
 </section>
 
