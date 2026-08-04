@@ -132,7 +132,7 @@
     <p style="margin-top:24px">That should make it easy to find a space, right?</p>
     <h3 class="h3">Yes, but what if…</h3>
     <p>😫 It's after 5pm and hardly any coffee shops are open.</p>
-    <img src="../assets/images/remote-rover-sf-complaints.png" alt="People in SF complaining about lack of open coffee shops" style="display:block;width:100%;height:auto;border-radius:10px;margin-top:1rem;margin-bottom:1rem">
+    <img src="../assets/images/remote-rover-sf-complaints.png" alt="People in SF complaining about lack of open coffee shops" style="display:block;width:50%;height:auto;border-radius:10px;margin:1rem auto">
     <p>😬 All the coffee shops around you with wifi are too crowded.</p>
     <p>😱 You picked an invalid result and now you're at a loud sports bar with a Zoom meeting in 2 minutes 💀</p>
     <p style="margin-top:16px">Because Google Maps isn't tailored to remote workspaces, you can't improve these results by reporting them — you can only write a frustrated review, which takes quite a bit of cognitive load. If only there was a more convenient, simpler way to refine these search results.</p>
@@ -223,17 +223,15 @@
     <p>Creating user personas helped me categorize the needs surfaced by that research.</p>
     <p style="color:var(--muted);font-size:14px">⚠️ Accounting for possible bias: as someone who's worked remotely for years all over the world, I've been both of these personas myself, which may influence my perspective.</p>
 
-    <div class="ph ph--dark">
-      <div class="cover-pair">
-        <img src="../assets/images/remote-rover-persona-local-regular.png" alt="Persona: The Local Regular">
-        <img src="../assets/images/remote-rover-persona-digital-nomad.png" alt="Persona: The Digital Nomad">
-      </div>
+    <div class="persona-stack">
+      <img src="../assets/images/remote-rover-persona-local-regular.png" alt="Persona: The Local Regular">
+      <img src="../assets/images/remote-rover-persona-digital-nomad.png" alt="Persona: The Digital Nomad">
     </div>
 
     <h3 class="h3">What remote workers look for</h3>
     <div class="cs-need-grid">
       <div class="cs-need-card">
-        <h3 class="h3">Physical environment</h3>
+        <h3 class="h3"><i data-lucide="store"></i>Physical environment</h3>
         <ul>
           <li>Lots of seating available</li>
           <li>Whether the location is quiet or not</li>
@@ -242,7 +240,7 @@
         </ul>
       </div>
       <div class="cs-need-card">
-        <h3 class="h3">Technical elements</h3>
+        <h3 class="h3"><i data-lucide="plug"></i>Technical elements</h3>
         <ul>
           <li>Strong wifi</li>
           <li>Power outlet availability</li>
@@ -250,7 +248,7 @@
         </ul>
       </div>
       <div class="cs-need-card">
-        <h3 class="h3">Space policies</h3>
+        <h3 class="h3"><i data-lucide="message-circle-warning"></i>Space policies</h3>
         <ul>
           <li>Can stay for several hours</li>
           <li>Wheelchair accessibility</li>
@@ -259,7 +257,7 @@
         </ul>
       </div>
       <div class="cs-need-card">
-        <h3 class="h3">Food & drink</h3>
+        <h3 class="h3"><i data-lucide="hamburger"></i>Food & drink</h3>
         <ul>
           <li>Quality food and drinks</li>
           <li>Range of food and drink choices</li>
@@ -371,12 +369,14 @@
     <p>In order to proceed with human-centered design, I won't build out more complex features until I gain more insight from user needs.</p>
 
     <h3 class="h3">Moderated session structure</h3>
-    <p><b>1.</b> Before each session, I'll share any questions I have with the user about their survey responses, and ask them to review the competitor sites and Google Maps to assess usability issues.</p>
-    <p><b>2.</b> On Remote Rover, the user will be instructed to locate an ideal workspace in their preferred location that they have NOT worked at yet.</p>
-    <p><b>3.</b> I'll pay attention to whether they have any needs the design currently doesn't address, such as a missing filter, noting queries like "is there a way to…" and other struggles.</p>
-    <p><b>4.</b> Since their search results will have some invalid options due to a current lack of user feedback, I'll ask them to report those options and suggest valid ones with the forms depicted above.</p>
-    <p><b>5.</b> At the end of the session, I'll ask how comfortable they are with their decision given the information provided, and what other features would make them feel more confident in their selection.</p>
-    <p><b>6.</b> After the session, I'll ask how it felt using Remote Rover overall — would they use it in the future to find workspaces, and would they recommend it to others?</p>
+    <div class="cs-step-grid">
+      <div class="cs-step-card"><span class="cs-step-number">1</span>Before each session, I'll share any questions I have with the user about their survey responses, and ask them to review the competitor sites and Google Maps to assess usability issues.</div>
+      <div class="cs-step-card"><span class="cs-step-number">2</span>On Remote Rover, the user will be instructed to locate an ideal workspace in their preferred location that they have NOT worked at yet.</div>
+      <div class="cs-step-card"><span class="cs-step-number">3</span>I'll pay attention to whether they have any needs the design currently doesn't address, such as a missing filter, noting queries like "is there a way to…" and other struggles.</div>
+      <div class="cs-step-card"><span class="cs-step-number">4</span>Since their search results will have some invalid options due to a current lack of user feedback, I'll ask them to report those options and suggest valid ones with the forms depicted above.</div>
+      <div class="cs-step-card"><span class="cs-step-number">5</span>At the end of the session, I'll ask how comfortable they are with their decision given the information provided, and what other features would make them feel more confident in their selection.</div>
+      <div class="cs-step-card"><span class="cs-step-number">6</span>After the session, I'll ask how it felt using Remote Rover overall — would they use it in the future to find workspaces, and would they recommend it to others?</div>
+    </div>
   </div>
 </section>
 
