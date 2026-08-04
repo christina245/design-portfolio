@@ -640,20 +640,20 @@ body {
 
 /* Wider fixed-height frame for landscape product screenshots/demo gifs */
 .product-frame {
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-flex;
+  padding: 32px;
   background: #000;
   border-radius: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .product-frame img {
-  max-width: 700px;
-  max-height: 100%;
+  display: block;
+  max-width: 100%;
+  max-height: 360px;
   width: auto;
   height: auto;
   object-fit: contain;
-  margin: 0 auto;
 }
 
 .cs-need-grid {
@@ -670,6 +670,21 @@ body {
 }
 .cs-need-card h3 { margin-top: 0; margin-bottom: 10px; font-size: 16px; }
 .cs-need-card ul { margin: 0; }
+
+.cs-pro-con-row {
+  display: flex;
+  gap: 16px;
+  margin: 0 0 20px;
+  align-items: stretch;
+}
+.cs-pro-con {
+  flex: 1;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 16px 20px;
+  font-size: 16px;
+  line-height: 1.7;
+}
 
 .cs-solution-label {
   font-size: 13px;
