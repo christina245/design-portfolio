@@ -41,7 +41,7 @@
   </div>
 </header>
 
-<div class="pain-point-slider">
+<div class="pain-point-slider" style="max-width:860px;margin:0 auto">
   <div class="pain-point-stage">
     <button class="pain-point-arrow pain-point-arrow--prev" aria-label="Previous screen">‹</button>
     <div class="pain-point-slides">
@@ -132,6 +132,7 @@
     <p style="margin-top:24px">That should make it easy to find a space, right?</p>
     <h3 class="h3">Yes, but what if…</h3>
     <p>😫 It's after 5pm and hardly any coffee shops are open.</p>
+    <img src="../assets/images/remote-rover-sf-complaints.png" alt="People in SF complaining about lack of open coffee shops" style="display:block;width:100%;height:auto;border-radius:10px;margin-top:1rem;margin-bottom:1rem">
     <p>😬 All the coffee shops around you with wifi are too crowded.</p>
     <p>😱 You picked an invalid result and now you're at a loud sports bar with a Zoom meeting in 2 minutes 💀</p>
     <p style="margin-top:16px">Because Google Maps isn't tailored to remote workspaces, you can't improve these results by reporting them — you can only write a frustrated review, which takes quite a bit of cognitive load. If only there was a more convenient, simpler way to refine these search results.</p>
@@ -144,22 +145,35 @@
   <p style="color:var(--muted);font-size:14px">⚠️ Note: these evaluations can't fully replace user research. I couldn't find much information on usability issues other users have had with these sites, so I'm currently filling in that gap with my own user testing.</p>
 
   <h3 class="h3">Nomadable</h3>
-  <p>❌ Immediately opens with a random list of locations in Southeast Asia — inconvenient since I'm located in California. To check in, you have to log in, which you aren't informed of until clicking the Check In button, inconsistent with the design of most location-based websites such as AirBnB.</p>
-  <p>❌ The default map view is excessively zoomed out, inconsistent with default map views on other apps with maps, like AirBnB and Google Maps.</p>
-  <p>✅ Each location features a good-quality photo, a label of the place category, and a review snippet of how work-friendly it is, consistent with Google Maps.</p>
-  <p>✅ Internet speed is easily visible, making usability more efficient for users traveling to locations where internet speeds are often irregular.</p>
-  <p>✅ Users can filter spaces by location type (cafe, hotel, public spaces, etc.) to reduce cognitive load and improve efficiency and flexibility.</p>
+  <p><a href="https://nomadable.net/" target="_blank" rel="noopener noreferrer">nomadable.net ↗</a></p>
   <div class="ph ph--shrink"><img src="../assets/images/remote-rover-nomadable-competitor.png" alt="Nomadable interface"></div>
-  <div class="ph ph--shrink"><img src="../assets/images/remote-rover-airbnb-reference.png" alt="AirBnB saved locations, for comparison"></div>
+  <div class="cs-pro-con-row" style="margin-top:1rem">
+    <div class="cs-pro-con">❌ Immediately opens with a random list of locations in Southeast Asia — inconvenient since I'm located in California. To check in, you have to log in, which you aren't informed of until clicking the Check In button, inconsistent with the design of most location-based websites such as AirBnB.</div>
+    <div class="cs-pro-con">✅ Each location features a good-quality photo, a label of the place category, and a review snippet of how work-friendly it is, consistent with Google Maps.</div>
+  </div>
+  <div class="cs-pro-con-row">
+    <div class="cs-pro-con">❌ The default map view is excessively zoomed out, inconsistent with default map views on other apps with maps, like AirBnB and Google Maps.</div>
+    <div class="cs-pro-con">✅ Internet speed is easily visible, making usability more efficient for users traveling to locations where internet speeds are often irregular.</div>
+  </div>
+  <div class="cs-pro-con-row">
+    <div class="cs-pro-con">✅ Users can filter spaces by location type (cafe, hotel, public spaces, etc.) to reduce cognitive load and improve efficiency and flexibility.</div>
+  </div>
 
   <h3 class="h3">Laptop Friendly</h3>
-  <p>❌ Based out of Belgrade, Serbia, and uses the 24-hour clock with no way to change it — this alone will cause friction for primarily American, San Francisco Bay Area-based users.</p>
-  <p>❌ It doesn't label the location's category: whether it's a hotel, cafe, etc.</p>
-  <p>❌ "Work vibe" and "Groups" filters are unclearly defined.</p>
-  <p>✅ It aggregates work-friendly spots of all types, including hotels, to give users more options and variety.</p>
-  <p>✅ While it pulls data from Google Maps, it also collects its own data to further quantify how work-friendly a location is.</p>
-  <p>✅ Users can refine results with multiple preset filters, adding flexibility and reducing time to find ideal spots.</p>
+  <p><a href="https://laptopfriendly.co/" target="_blank" rel="noopener noreferrer">laptopfriendly.co ↗</a></p>
   <div class="ph ph--shrink"><img src="../assets/images/remote-rover-laptop-friendly-competitor.png" alt="Laptop Friendly interface"></div>
+  <div class="cs-pro-con-row" style="margin-top:1rem">
+    <div class="cs-pro-con">❌ Based out of Belgrade, Serbia, and uses the 24-hour clock with no way to change it — this alone will cause friction for primarily American, San Francisco Bay Area-based users.</div>
+    <div class="cs-pro-con">✅ It aggregates work-friendly spots of all types, including hotels, to give users more options and variety.</div>
+  </div>
+  <div class="cs-pro-con-row">
+    <div class="cs-pro-con">❌ It doesn't label the location's category: whether it's a hotel, cafe, etc.</div>
+    <div class="cs-pro-con">✅ While it pulls data from Google Maps, it also collects its own data to further quantify how work-friendly a location is.</div>
+  </div>
+  <div class="cs-pro-con-row">
+    <div class="cs-pro-con">❌ "Work vibe" and "Groups" filters are unclearly defined.</div>
+    <div class="cs-pro-con">✅ Users can refine results with multiple preset filters, adding flexibility and reducing time to find ideal spots.</div>
+  </div>
 
   <h3 class="h3">Problem: missed options, and inaccurate results</h3>
   <p>⭐️ Saluhall is one of my favorite remote workspaces in San Francisco, but because it's a food court, it won't show up if you search "cafes with wifi" — or even "places with wifi." 😠 That means users are missing out on a desirable option, and 🕘 it's open until 8pm, later than the vast majority of nearby cafes, making it a great fallback after 5pm.</p>
