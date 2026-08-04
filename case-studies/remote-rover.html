@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Remote Rover: Product Design Case Study</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="nav nav--wide">
+  <div class="nav-brand">
+    <div class="logo-placeholder"><img src="../assets/images/logo-nautilus-turquoise.png" alt="Christina's logo"></div>
+    <span class="nav-label">Case Study</span>
+  </div>
+  <div class="nav-links">
+    <a href="../index.html#work" class="nav-link" target="_blank" rel="noopener noreferrer">Work</a>
+    <a href="../index.html#about" class="nav-link" target="_blank" rel="noopener noreferrer">About</a>
+    <a href="../contact.html" class="nav-link" target="_blank" rel="noopener noreferrer">Contact</a>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/christina-m-nguyen-0655a9b2/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/linkedin-white.png" alt="LinkedIn"></a>
+      <a href="https://designingforall.substack.com/" aria-label="Substack" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/substack.svg" alt="Substack"></a>
+      <a href="https://github.com/christina245" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/github.svg" alt="GitHub" data-invert-dark></a>
+    </div>
+    <div class="theme-toggle">
+      <button data-theme-btn="light" aria-label="Light mode"><i data-lucide="sun"></i></button>
+      <button data-theme-btn="dark" aria-label="Dark mode"><i data-lucide="moon"></i></button>
+    </div>
+  </div>
+</nav>
+
+<header class="cs-header">
+  <div class="eyebrow">Case study — Product design</div>
+  <h1 class="h1">Remote Rover</h1>
+  <p class="cs-dek">It's nice to get out of the house to get some remote work done. Remote Rover makes it easier to find the right (free) location.</p>
+  <div class="cs-meta">
+    <div><div class="cs-meta-label">ROLE</div><div class="cs-meta-value">Product designer, researcher, and developer</div></div>
+    <div><div class="cs-meta-label">TIMELINE</div><div class="cs-meta-value">July – August 2025</div></div>
+    <div><div class="cs-meta-label">TOOLS</div><div class="cs-meta-value">Figma, Lovable</div></div>
+    <div><div class="cs-meta-label">CONTEXT</div><div class="cs-meta-value">Built as a side project, on hold pending funding for Google Maps and Yelp API usage</div></div>
+  </div>
+</header>
+
+<div class="pain-point-slider">
+  <div class="pain-point-stage">
+    <button class="pain-point-arrow pain-point-arrow--prev" aria-label="Previous screen">‹</button>
+    <div class="pain-point-slides">
+      <div class="pain-point-slide">
+        <div class="product-frame"><img src="../assets/images/remote-rover-header.gif" alt="Remote Rover homepage"></div>
+      </div>
+      <div class="pain-point-slide" hidden>
+        <div class="product-frame"><img src="../assets/images/remote-rover-map-search.gif" alt="Remote Rover map search"></div>
+      </div>
+      <div class="pain-point-slide" hidden>
+        <div class="product-frame"><img src="../assets/images/remote-rover-app-demo.gif" alt="Remote Rover app demo"></div>
+      </div>
+      <div class="pain-point-slide" hidden>
+        <div class="product-frame"><img src="../assets/images/remote-rover-cafe-search-demo.gif" alt="Remote Rover cafe search demo"></div>
+      </div>
+    </div>
+    <button class="pain-point-arrow pain-point-arrow--next" aria-label="Next screen">›</button>
+  </div>
+  <div class="pain-point-dots">
+    <button class="pain-point-dot is-active" aria-label="Go to slide 1"></button>
+    <button class="pain-point-dot" aria-label="Go to slide 2"></button>
+    <button class="pain-point-dot" aria-label="Go to slide 3"></button>
+    <button class="pain-point-dot" aria-label="Go to slide 4"></button>
+  </div>
+</div>
+
+<div class="cs-lede">
+  <p class="cs-pullquote">Remote Rover simplifies the search for remote work-friendly spaces by providing a curated, searchable map that displays all work-friendly public locations — not just "cafes with wifi."</p>
+</div>
+
+<section class="cs-section">
+  <div class="eyebrow">01 — The problem and the pitch</div>
+  <h2 class="h2">Google Maps isn't built for finding a place to work</h2>
+  <p>Searching "coffee shops with wifi" on Google Maps turns up many clearly work-friendly cafes, but these results are often inaccurate. Users also tend to overlook non-cafes that are just as work-friendly, like food courts, libraries, and hotel lobbies.</p>
+  <div class="cs-solution-label">SOLUTION</div>
+  <p>Remote Rover simplifies the search for remote work-friendly spaces by providing a curated, searchable map that displays all work-friendly public locations, not just "cafes with wifi." Results are more accurate than Google Maps because users can suggest and take down locations of their choice.</p>
+</section>
+
+<section class="cs-section-band">
+  <div class="cs-section">
+    <div class="eyebrow">02 — How remote workers currently search</div>
+    <h2 class="h2">Three ways people already look for a place to work</h2>
+
+    <h3 class="h3" style="margin-top:0">Google searches that turn up articles like "30 SF Coffee Shops For Getting Work Done"</h3>
+    <p>✅ Articles provide deeper detail on a single page rather than scattered across several reviews.</p>
+    <p>❌ Content isn't always updated and often reflects closed locations. Articles typically lack hours or sufficient photos, forcing reliance on the author's opinion.</p>
+
+    <h3 class="h3">Asking "Favorite cafes to work from?" on discussion forums, group chats, etc.</h3>
+    <p>✅ A more diverse range of opinions beyond a few authors and editors. Others can share whether locations have closed, or add feedback like "no, that place is definitely NOT quiet!"</p>
+    <p>❌ Many responses are outdated. Respondents don't always provide hours, photos, or links to Google Maps, Yelp, or websites, requiring additional research.</p>
+
+    <h3 class="h3">Searching Google Maps or Yelp with keywords like "coffee shops with wifi"</h3>
+    <p>✅ Mostly accurate, updated results with photos and review snippets verifying that users find the space work-friendly.</p>
+    <p>❌ No way to remove invalid results beyond leaving your own review. It's difficult to display multiple location categories simultaneously (cafes AND libraries). If nearby cafes are occupied, users must manually search for alternatives.</p>
+
+    <div class="pain-point-slider">
+      <div class="pain-point-stage">
+        <button class="pain-point-arrow pain-point-arrow--prev" aria-label="Previous screenshot">‹</button>
+        <div class="pain-point-slides">
+          <div class="pain-point-slide">
+            <div class="principle-frame"><img src="../assets/images/remote-rover-sf-search-proof.png" alt="Google Maps search results for coffee shop with wifi in San Francisco"></div>
+            <p class="pain-point-caption">These are my search results for "coffee shop with wifi" in San Francisco. I can confirm they're accurate.</p>
+          </div>
+          <div class="pain-point-slide" hidden>
+            <div class="principle-frame"><img src="../assets/images/remote-rover-sf-search-proof-2.png" alt="Google Maps search results, second example"></div>
+            <p class="pain-point-caption">Searching "quiet coffee shop with wifi and food" also turned up mostly accurate results.</p>
+          </div>
+          <div class="pain-point-slide" hidden>
+            <div class="principle-frame"><img src="../assets/images/remote-rover-capital-one-cafe-reviews.png" alt="Capital One Cafe reviews"></div>
+            <p class="pain-point-caption">The review snippet makes a major positive impact on usability by providing clear, immediate verification that at least one user finds the space work-friendly.</p>
+          </div>
+        </div>
+        <button class="pain-point-arrow pain-point-arrow--next" aria-label="Next screenshot">›</button>
+      </div>
+      <div class="pain-point-dots">
+        <button class="pain-point-dot is-active" aria-label="Go to slide 1"></button>
+        <button class="pain-point-dot" aria-label="Go to slide 2"></button>
+        <button class="pain-point-dot" aria-label="Go to slide 3"></button>
+      </div>
+    </div>
+
+    <p style="margin-top:24px">That should make it easy to find a space, right?</p>
+    <h3 class="h3">Yes, but what if…</h3>
+    <p>😫 It's after 5pm and hardly any coffee shops are open.</p>
+    <p>😬 All the coffee shops around you with wifi are too crowded.</p>
+    <p>😱 You picked an invalid result and now you're at a loud sports bar with a Zoom meeting in 2 minutes 💀</p>
+    <p style="margin-top:16px">Because Google Maps isn't tailored to remote workspaces, you can't improve these results by reporting them — you can only write a frustrated review, which takes quite a bit of cognitive load. If only there was a more convenient, simpler way to refine these search results.</p>
+  </div>
+</section>
+
+<section class="cs-section">
+  <div class="eyebrow">03 — Competitive analysis</div>
+  <h2 class="h2">How have other designers attempted to solve this?</h2>
+  <p style="color:var(--muted);font-size:14px">⚠️ Note: these evaluations can't fully replace user research. I couldn't find much information on usability issues other users have had with these sites, so I'm currently filling in that gap with my own user testing.</p>
+
+  <h3 class="h3">Nomadable</h3>
+  <p>❌ Immediately opens with a random list of locations in Southeast Asia — inconvenient since I'm located in California. To check in, you have to log in, which you aren't informed of until clicking the Check In button, inconsistent with the design of most location-based websites such as AirBnB.</p>
+  <p>❌ The default map view is excessively zoomed out, inconsistent with default map views on other apps with maps, like AirBnB and Google Maps.</p>
+  <p>✅ Each location features a good-quality photo, a label of the place category, and a review snippet of how work-friendly it is, consistent with Google Maps.</p>
+  <p>✅ Internet speed is easily visible, making usability more efficient for users traveling to locations where internet speeds are often irregular.</p>
+  <p>✅ Users can filter spaces by location type (cafe, hotel, public spaces, etc.) to reduce cognitive load and improve efficiency and flexibility.</p>
+  <div class="ph ph--shrink"><img src="../assets/images/remote-rover-nomadable-competitor.png" alt="Nomadable interface"></div>
+  <div class="ph ph--shrink"><img src="../assets/images/remote-rover-airbnb-reference.png" alt="AirBnB saved locations, for comparison"></div>
+
+  <h3 class="h3">Laptop Friendly</h3>
+  <p>❌ Based out of Belgrade, Serbia, and uses the 24-hour clock with no way to change it — this alone will cause friction for primarily American, San Francisco Bay Area-based users.</p>
+  <p>❌ It doesn't label the location's category: whether it's a hotel, cafe, etc.</p>
+  <p>❌ "Work vibe" and "Groups" filters are unclearly defined.</p>
+  <p>✅ It aggregates work-friendly spots of all types, including hotels, to give users more options and variety.</p>
+  <p>✅ While it pulls data from Google Maps, it also collects its own data to further quantify how work-friendly a location is.</p>
+  <p>✅ Users can refine results with multiple preset filters, adding flexibility and reducing time to find ideal spots.</p>
+  <div class="ph ph--shrink"><img src="../assets/images/remote-rover-laptop-friendly-competitor.png" alt="Laptop Friendly interface"></div>
+
+  <h3 class="h3">Problem: missed options, and inaccurate results</h3>
+  <p>⭐️ Saluhall is one of my favorite remote workspaces in San Francisco, but because it's a food court, it won't show up if you search "cafes with wifi" — or even "places with wifi." 😠 That means users are missing out on a desirable option, and 🕘 it's open until 8pm, later than the vast majority of nearby cafes, making it a great fallback after 5pm.</p>
+  <p>😬 Searching "coffee shops with wifi" in San Jose has also turned up far more inaccurate results than in San Francisco. ⏰ Navigating to invalid locations wastes users' time, and traumatized users might feel compelled to spend extra time verifying future results.</p>
+
+  <div class="pain-point-slider">
+    <div class="pain-point-stage">
+      <button class="pain-point-arrow pain-point-arrow--prev" aria-label="Previous location">‹</button>
+      <div class="pain-point-slides">
+        <div class="pain-point-slide">
+          <div class="principle-frame"><img src="../assets/images/remote-rover-saluhall-food-court.png" alt="Saluhall food court"></div>
+          <p class="pain-point-caption"><b>Saluhall</b>: a food court that won't turn up in a "cafes with wifi" search, despite being open until 8pm with plenty of seating.</p>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <div class="principle-frame"><img src="../assets/images/remote-rover-safari-crown-coffee.png" alt="Safari Crown Coffee"></div>
+          <p class="pain-point-caption"><b>Safari Crown Coffee</b>: one of the many work-friendly cafes I researched while scoping out ideal features.</p>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <div class="principle-frame"><img src="../assets/images/remote-rover-ritual-coffee-roasters.png" alt="Ritual Coffee Roasters"></div>
+          <p class="pain-point-caption"><b>Ritual Coffee Roasters</b>: another SF spot studied for its work-friendly layout and amenities.</p>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <div class="principle-frame"><img src="../assets/images/remote-rover-rw-cafe.png" alt="RW Cafe"></div>
+          <p class="pain-point-caption"><b>RW Cafe</b>: a smaller, lesser-known spot that's easy to miss with a generic "cafes with wifi" search.</p>
+        </div>
+      </div>
+      <button class="pain-point-arrow pain-point-arrow--next" aria-label="Next location">›</button>
+    </div>
+    <div class="pain-point-dots">
+      <button class="pain-point-dot is-active" aria-label="Go to slide 1"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 2"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 3"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 4"></button>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section-band">
+  <div class="cs-section">
+    <div class="eyebrow">04 — Understanding remote worker needs</div>
+    <h2 class="h2">So, what features are people actually seeking in an ideal space?</h2>
+    <p>To determine which features to implement beyond what the competitors above already offer, I researched typical remote worker needs and concerns through discussion forums, articles, and Google Maps and Yelp reviews of popular and underrated work-friendly locations.</p>
+
+    <h3 class="h3">Who'll be using this tool?</h3>
+    <p>Creating user personas helped me categorize the needs surfaced by that research.</p>
+    <p style="color:var(--muted);font-size:14px">⚠️ Accounting for possible bias: as someone who's worked remotely for years all over the world, I've been both of these personas myself, which may influence my perspective.</p>
+
+    <div class="ph ph--dark">
+      <div class="cover-pair">
+        <img src="../assets/images/remote-rover-persona-local-regular.png" alt="Persona: The Local Regular">
+        <img src="../assets/images/remote-rover-persona-digital-nomad.png" alt="Persona: The Digital Nomad">
+      </div>
+    </div>
+
+    <h3 class="h3">What remote workers look for</h3>
+    <div class="cs-need-grid">
+      <div class="cs-need-card">
+        <h3 class="h3">Physical environment</h3>
+        <ul>
+          <li>Lots of seating available</li>
+          <li>Whether the location is quiet or not</li>
+          <li>Aesthetic and ambiance conducive to focus and productivity</li>
+          <li>Distance to home and public transit</li>
+        </ul>
+      </div>
+      <div class="cs-need-card">
+        <h3 class="h3">Technical elements</h3>
+        <ul>
+          <li>Strong wifi</li>
+          <li>Power outlet availability</li>
+          <li>Space for non-computer work, like reading, writing on paper, or knitting</li>
+        </ul>
+      </div>
+      <div class="cs-need-card">
+        <h3 class="h3">Space policies</h3>
+        <ul>
+          <li>Can stay for several hours</li>
+          <li>Wheelchair accessibility</li>
+          <li>Ease of obtaining wifi password</li>
+          <li>Late or early closing hours</li>
+        </ul>
+      </div>
+      <div class="cs-need-card">
+        <h3 class="h3">Food & drink</h3>
+        <ul>
+          <li>Quality food and drinks</li>
+          <li>Range of food and drink choices</li>
+          <li>Affordability</li>
+          <li>Whether there's a bathroom</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section">
+  <div class="eyebrow">05 — The mockups so far</div>
+  <h2 class="h2">From Figma to a working prototype</h2>
+  <p>I designed each screen in Figma and brought it to life with the AI vibe-coding tool Lovable. The bulk of the code is AI-generated from my prompts and Figma files, but some of it is manually written by me.</p>
+  <p style="color:var(--muted);font-size:14px">✅ More features will be added after substantial usability testing.</p>
+
+  <h3 class="h3">The homepage: a simple location search bar</h3>
+  <p>It seemed most efficient for users to be able to search for a location right away upon opening the site — reducing friction compared to the user flows of the competitors above, with no need to log in. Like on Google, the screen asks the user for permission to detect and fill in their current ZIP, minimizing the time between landing on the site and viewing results. Users can also erase this to enter any city or ZIP.</p>
+  <div class="pain-point-slider">
+    <div class="pain-point-stage">
+      <button class="pain-point-arrow pain-point-arrow--prev" aria-label="Previous mockup">‹</button>
+      <div class="pain-point-slides">
+        <div class="pain-point-slide">
+          <div class="principle-frame"><img src="../assets/images/remote-rover-homepage-mockup.png" alt="Homepage mockup"></div>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <div class="principle-frame"><img src="../assets/images/remote-rover-homepage-prototype.gif" alt="Homepage prototype in motion"></div>
+        </div>
+      </div>
+      <button class="pain-point-arrow pain-point-arrow--next" aria-label="Next mockup">›</button>
+    </div>
+    <div class="pain-point-dots">
+      <button class="pain-point-dot is-active" aria-label="Go to slide 1"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 2"></button>
+    </div>
+  </div>
+
+  <h3 class="h3">Solving inaccurate results: human location cleanup</h3>
+  <p>Google Maps' algorithms and generative AI won't always be 100% accurate, so users are encouraged to take down inappropriate locations — accounting for technical gaps, improving result validity, and preventing users from wasting time manually verifying or navigating to the wrong location.</p>
+  <div class="pain-point-slider">
+    <div class="pain-point-stage">
+      <button class="pain-point-arrow pain-point-arrow--prev" aria-label="Previous mockup">‹</button>
+      <div class="pain-point-slides">
+        <div class="pain-point-slide">
+          <div class="principle-frame"><img src="../assets/images/remote-rover-report-location-mockup.gif" alt="Reporting a location mockup"></div>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <div class="principle-frame"><img src="../assets/images/remote-rover-suggest-edit-mockup.png" alt="Suggesting an edit on Google Maps"></div>
+        </div>
+      </div>
+      <button class="pain-point-arrow pain-point-arrow--next" aria-label="Next mockup">›</button>
+    </div>
+    <div class="pain-point-dots">
+      <button class="pain-point-dot is-active" aria-label="Go to slide 1"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 2"></button>
+    </div>
+  </div>
+
+  <h3 class="h3">Filtering spaces by location type</h3>
+  <p>Some users may only be in the mood for certain types of work-friendly spaces, like food courts or libraries. They can remove unwanted categories by clearing each tag to refine results while still maintaining multiple location types. Each map pin's color matches the color of its tag for coordination, and users can open each location on Google Maps to view full details and navigate there.</p>
+  <p style="color:var(--muted);font-size:14px">⚠️ Note: the photos and AI summaries are currently placeholders to limit data costs, since location data is being requested from Yelp and Google Maps.</p>
+  <div class="pain-point-slider">
+    <div class="pain-point-stage">
+      <button class="pain-point-arrow pain-point-arrow--prev" aria-label="Previous mockup">‹</button>
+      <div class="pain-point-slides">
+        <div class="pain-point-slide">
+          <div class="principle-frame"><img src="../assets/images/remote-rover-pin-filter.gif" alt="Map pin filter legend"></div>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <div class="principle-frame"><img src="../assets/images/remote-rover-map-filter-mockup.gif" alt="Map with color-coded pins and filter tags"></div>
+        </div>
+      </div>
+      <button class="pain-point-arrow pain-point-arrow--next" aria-label="Next mockup">›</button>
+    </div>
+    <div class="pain-point-dots">
+      <button class="pain-point-dot is-active" aria-label="Go to slide 1"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 2"></button>
+    </div>
+  </div>
+
+  <h3 class="h3">Viewing location search results</h3>
+  <p>The search results and location details panels are inspired by the design of Google Maps. Each location has an AI-generated summary derived from its Google Maps or Yelp reviews, summarizing how work-friendly the location is to give users immediate verification without manually searching through reviews. The photo section provides additional verification by pulling photos of customers working at the location, falling back to photos of the seating area if work photos aren't available.</p>
+  <div class="ph ph--shrink"><img src="../assets/images/remote-rover-search-results-mockup.png" alt="Location search results mockup"></div>
+
+  <h3 class="h3">Crowdsourcing locations</h3>
+  <p>To account for locations the algorithm may be erroneously skipping, users always see a dismissible floating banner inviting them to submit a location, and must confirm the submission has characteristics that make it work-friendly. This makes lesser-known and brand-new spaces — which may lack reviews — much more discoverable than on Google Maps.</p>
+  <p style="color:var(--muted);font-size:14px">⚠️ I sadly couldn't figure out how to code this function, so I'm using demo text for now.</p>
+  <div class="ph ph--shrink"><img src="../assets/images/remote-rover-suggest-location-mockup.gif" alt="Suggesting a new location mockup"></div>
+
+  <h3 class="h3">Curated reviews for extra social proof</h3>
+  <p>Knowing that not everyone trusts generative AI's accuracy, each location uses APIs and an algorithm to display selected reviews from Google Maps and Yelp, pulled from users specifically saying it's work-friendly.</p>
+  <div class="ph ph--shrink"><img src="../assets/images/remote-rover-curated-reviews-mockup.png" alt="Curated reviews mockup"></div>
+
+  <h3 class="h3">Of course, it needs a mobile version</h3>
+  <p>It seems likely that users will most often search for workspaces on mobile, waiting until they actually arrive to pull out a desktop. The original Figma designs were actually mobile-only — I later adapted the code for desktop.</p>
+  <div class="phone-mockup-group phone-mockup-uniform">
+    <img src="../assets/images/remote-rover-mobile-loading-mockup.gif" alt="Mobile loading screen mockup">
+    <img src="../assets/images/remote-rover-search-results-mobile-mockup.gif" alt="Mobile search results mockup">
+  </div>
+</section>
+
+<section class="cs-section-band">
+  <div class="cs-section">
+    <div class="eyebrow">06 — User testing</div>
+    <h2 class="h2">User testing is in progress</h2>
+    <p>I'm currently recruiting a diverse range of participants who often work remotely in public, including students, remote workers, entrepreneurs, and unemployed jobseekers. Testing takes the form of a survey followed by moderated sessions.</p>
+    <div class="cs-solution-label">THE USERS DETERMINE WHAT'S BUILT NEXT</div>
+    <p>In order to proceed with human-centered design, I won't build out more complex features until I gain more insight from user needs.</p>
+
+    <h3 class="h3">Moderated session structure</h3>
+    <p><b>1.</b> Before each session, I'll share any questions I have with the user about their survey responses, and ask them to review the competitor sites and Google Maps to assess usability issues.</p>
+    <p><b>2.</b> On Remote Rover, the user will be instructed to locate an ideal workspace in their preferred location that they have NOT worked at yet.</p>
+    <p><b>3.</b> I'll pay attention to whether they have any needs the design currently doesn't address, such as a missing filter, noting queries like "is there a way to…" and other struggles.</p>
+    <p><b>4.</b> Since their search results will have some invalid options due to a current lack of user feedback, I'll ask them to report those options and suggest valid ones with the forms depicted above.</p>
+    <p><b>5.</b> At the end of the session, I'll ask how comfortable they are with their decision given the information provided, and what other features would make them feel more confident in their selection.</p>
+    <p><b>6.</b> After the session, I'll ask how it felt using Remote Rover overall — would they use it in the future to find workspaces, and would they recommend it to others?</p>
+  </div>
+</section>
+
+<section class="cs-section">
+  <div class="eyebrow">07 — What's next</div>
+  <h2 class="h2">Features I'm considering — if and only if they make sense for user needs</h2>
+  <ul>
+    <li>A backend for users to create their own accounts to save their favorite workspaces</li>
+    <li>Like on Laptop Friendly, user-generated ratings independent of Yelp or Google Maps data for how work-friendly a space is, such as noise level or outlet availability</li>
+    <li>Personalized recommendations based on the user's saved locations and past ratings</li>
+    <li>Trip planning mode: a section for users to save locations exclusively for a planned trip elsewhere</li>
+    <li>A more ambitious idea: a space to organize coworking sessions other users can join, if given permission by the location owner</li>
+  </ul>
+</section>
+
+<footer class="site-footer site-footer--wide">
+  <span>Portfolio — Case Study</span>
+  <span>© 2026</span>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
