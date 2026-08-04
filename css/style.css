@@ -51,9 +51,9 @@
   --text: #0A0A0A;
   --muted: #565F6D;
   --border: rgba(10, 10, 10, 0.09);
-  --accent: #2F8693;
-  --accent-text: #2F8693;
-  --accent-grad: linear-gradient(90deg, #4BC1D2, #2F8693);
+  --accent: #87B7BD;
+  --accent-text: #87B7BD;
+  --accent-grad: linear-gradient(90deg, #A5C9CE, #87B7BD);
   --ph-bg: #F1F1F3;
   --ph-stripe: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.04) 0px, rgba(0, 0, 0, 0.04) 2px, transparent 2px, transparent 14px);
   --badge-bg: rgba(255, 255, 255, 0.85);
@@ -65,9 +65,9 @@
   --text: #E5E5EA;
   --muted: #A3A2AF;
   --border: rgba(229, 229, 234, 0.12);
-  --accent: #2F8693;
-  --accent-text: #2F8693;
-  --accent-grad: linear-gradient(90deg, #4BC1D2, #2F8693);
+  --accent: #87B7BD;
+  --accent-text: #87B7BD;
+  --accent-grad: linear-gradient(90deg, #A5C9CE, #87B7BD);
   --ph-bg: #1F1F2A;
   --ph-stripe: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0px, rgba(255, 255, 255, 0.03) 2px, transparent 2px, transparent 14px);
   --badge-bg: rgba(31, 31, 42, 0.85);
