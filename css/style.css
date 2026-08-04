@@ -51,9 +51,9 @@
   --text: #0A0A0A;
   --muted: #565F6D;
   --border: rgba(10, 10, 10, 0.09);
-  --accent: #87B7BD;
-  --accent-text: #87B7BD;
-  --accent-grad: linear-gradient(90deg, #A5C9CE, #87B7BD);
+  --accent: #58777B;
+  --accent-text: #58777B;
+  --accent-grad: linear-gradient(90deg, #82999C, #58777B);
   --ph-bg: #F1F1F3;
   --ph-stripe: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.04) 0px, rgba(0, 0, 0, 0.04) 2px, transparent 2px, transparent 14px);
   --badge-bg: rgba(255, 255, 255, 0.85);
