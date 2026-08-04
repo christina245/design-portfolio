@@ -277,7 +277,7 @@
 
   <h3 class="h3">The homepage: a simple location search bar</h3>
   <p>It seemed most efficient for users to be able to search for a location right away upon opening the site — reducing friction compared to the user flows of the competitors above, with no need to log in. Like on Google, the screen asks the user for permission to detect and autofill in their current ZIP, minimizing the time between landing on the site and viewing results.</p>
-  <div class="ph ph--shrink"><img src="../assets/images/remote-rover-homepage-prototype.gif" alt="Homepage prototype in motion"></div>
+  <div class="ph ph--shrink"><img src="../assets/images/remote-rover-homepage-prototype.gif" alt="Homepage prototype in motion" style="width:50%;border-radius:40px;margin:0 auto 1rem;"></div>
 
   <h3 class="h3">Solving inaccurate results: human location cleanup</h3>
   <p>Google Maps' algorithms and generative AI won't always be 100% accurate, so users are encouraged to take down inappropriate locations — accounting for technical gaps, improving result validity, and preventing users from wasting time manually verifying or navigating to the wrong location.</p>
@@ -303,28 +303,11 @@
   <h3 class="h3">Filtering spaces by location type</h3>
   <p>Some users may only be in the mood for certain types of work-friendly spaces, like food courts or libraries. They can remove unwanted categories by clearing each tag to refine results while still maintaining multiple location types. Each map pin's color matches the color of its tag for coordination, and users can open each location on Google Maps to view full details and navigate there.</p>
   <p style="color:var(--muted);font-size:14px">⚠️ Note: the photos and AI summaries are currently placeholders to limit data costs, since location data is being requested from Yelp and Google Maps.</p>
-  <div class="pain-point-slider">
-    <div class="pain-point-stage">
-      <button class="pain-point-arrow pain-point-arrow--prev" aria-label="Previous mockup">‹</button>
-      <div class="pain-point-slides">
-        <div class="pain-point-slide">
-          <div class="principle-frame"><img src="../assets/images/remote-rover-pin-filter.gif" alt="Map pin filter legend"></div>
-        </div>
-        <div class="pain-point-slide" hidden>
-          <div class="principle-frame"><img src="../assets/images/remote-rover-map-filter-mockup.gif" alt="Map with color-coded pins and filter tags"></div>
-        </div>
-      </div>
-      <button class="pain-point-arrow pain-point-arrow--next" aria-label="Next mockup">›</button>
-    </div>
-    <div class="pain-point-dots">
-      <button class="pain-point-dot is-active" aria-label="Go to slide 1"></button>
-      <button class="pain-point-dot" aria-label="Go to slide 2"></button>
-    </div>
-  </div>
+  <div class="ph ph--shrink"><img src="../assets/images/remote-rover-pin-filter.gif" alt="Map pin filter legend"></div>
 
   <h3 class="h3">Viewing location search results</h3>
   <p>The search results and location details panels are inspired by the design of Google Maps. Each location has an AI-generated summary derived from its Google Maps or Yelp reviews, summarizing how work-friendly the location is to give users immediate verification without manually searching through reviews. The photo section provides additional verification by pulling photos of customers working at the location, falling back to photos of the seating area if work photos aren't available.</p>
-  <div class="ph ph--shrink"><img src="../assets/images/remote-rover-search-results-mockup.png" alt="Location search results mockup"></div>
+  <div class="ph ph--shrink"><img src="../assets/images/remote-rover-map-filter-mockup.gif" alt="Map with color-coded pins and filter tags"></div>
 
   <h3 class="h3">Crowdsourcing locations</h3>
   <p>To account for locations the algorithm may be erroneously skipping, users always see a dismissible floating banner inviting them to submit a location, and must confirm the submission has characteristics that make it work-friendly. This makes lesser-known and brand-new spaces — which may lack reviews — much more discoverable than on Google Maps.</p>
@@ -373,6 +356,7 @@
     <li>Trip planning mode: a section for users to save locations exclusively for a planned trip elsewhere</li>
     <li>A more ambitious idea: a space to organize coworking sessions other users can join, if given permission by the location owner</li>
   </ul>
+  <img src="../assets/images/remote-rover-airbnb-reference.png" alt="AirBnB saved locations, for comparison" style="display:block;width:100%;height:auto;border-radius:10px;margin-top:1rem;margin-bottom:1rem">
 </section>
 
 <footer class="site-footer site-footer--wide">
