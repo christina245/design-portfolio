@@ -86,19 +86,19 @@
     <h2 class="h2">Three ways people already look for a place to work</h2>
 
     <h3 class="h3" style="margin-top:0">Google searches that turn up articles like "30 SF Coffee Shops For Getting Work Done"</h3>
-    <div class="cs-pro-con-row">
+    <div class="cs-pro-con-row" style="margin-top:1rem">
       <div class="cs-pro-con">✅ Articles provide deeper detail on a single page rather than scattered across several reviews.</div>
       <div class="cs-pro-con">❌ Content isn't always updated and often reflects closed locations. Articles typically lack hours or sufficient photos, forcing reliance on the author's opinion.</div>
     </div>
 
     <h3 class="h3">Asking "Favorite cafes to work from?" on discussion forums, group chats, etc.</h3>
-    <div class="cs-pro-con-row">
+    <div class="cs-pro-con-row" style="margin-top:1rem">
       <div class="cs-pro-con">✅ A more diverse range of opinions beyond a few authors and editors. Others can share whether locations have closed, or add feedback like "no, that place is definitely NOT quiet!"</div>
       <div class="cs-pro-con">❌ Many responses are outdated. Respondents don't always provide hours, photos, or links to Google Maps, Yelp, or websites, requiring additional research.</div>
     </div>
 
     <h3 class="h3">Searching Google Maps or Yelp with keywords like "coffee shops with wifi"</h3>
-    <div class="cs-pro-con-row">
+    <div class="cs-pro-con-row" style="margin-top:1rem">
       <div class="cs-pro-con">✅ Mostly accurate, updated results with photos and review snippets verifying that users find the space work-friendly.</div>
       <div class="cs-pro-con">❌ No way to remove invalid results beyond leaving your own review. It's difficult to display multiple location categories simultaneously (cafes AND libraries). If nearby cafes are occupied, users must manually search for alternatives.</div>
     </div>
@@ -138,6 +138,42 @@
     <p style="margin-top:16px">Because Google Maps isn't tailored to remote workspaces, you can't improve these results by reporting them — you can only write a frustrated review, which takes quite a bit of cognitive load. If only there was a more convenient, simpler way to refine these search results.</p>
   </div>
 </section>
+<section class="cs-section">
+<h3 class="h3">Problem: missed options, and inaccurate results</h3>
+  <p>⭐️ Saluhall is one of my favorite remote workspaces in San Francisco, but because it's a food court, it won't show up if you search "cafes with wifi" — or even "places with wifi." 😠 That means users are missing out on a desirable option, and 🕘 it's open until 8pm, later than the vast majority of nearby cafes, making it a great fallback after 5pm.</p>
+  <p>😬 Searching "coffee shops with wifi" in San Jose has also turned up far more inaccurate results than in San Francisco. ⏰ Navigating to invalid locations wastes users' time, and traumatized users might feel compelled to spend extra time verifying future results.</p>
+
+  <div class="pain-point-slider">
+    <div class="pain-point-stage">
+      <button class="pain-point-arrow pain-point-arrow--prev" aria-label="Previous location">‹</button>
+      <div class="pain-point-slides">
+        <div class="pain-point-slide">
+          <div class="principle-frame"><img src="../assets/images/remote-rover-saluhall-food-court.png" alt="Saluhall food court"></div>
+          <p class="pain-point-caption"><b>Saluhall</b>: a food court that won't turn up in a "cafes with wifi" search, despite being open until 8pm with plenty of seating.</p>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <div class="principle-frame"><img src="../assets/images/remote-rover-safari-crown-coffee.png" alt="Safari Crown Coffee"></div>
+          <p class="pain-point-caption"><b>Safari Crown Coffee</b>: Not a cafe! This is a manufacturer.</p>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <div class="principle-frame"><img src="../assets/images/remote-rover-ritual-coffee-roasters.png" alt="Ritual Coffee Roasters"></div>
+          <p class="pain-point-caption"><b>Ritual Coffee Roasters</b>: no wifi! You can still work there, but you won't know about the lack of wifi until digging into the reviews.</p>
+        </div>
+        <div class="pain-point-slide" hidden>
+          <div class="principle-frame"><img src="../assets/images/remote-rover-rw-cafe.png" alt="RW Cafe"></div>
+          <p class="pain-point-caption"><b>RW Cafe</b>: a smaller, lesser-known spot that's easy to miss with a generic "cafes with wifi" search.</p>
+        </div>
+      </div>
+      <button class="pain-point-arrow pain-point-arrow--next" aria-label="Next location">›</button>
+    </div>
+    <div class="pain-point-dots">
+      <button class="pain-point-dot is-active" aria-label="Go to slide 1"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 2"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 3"></button>
+      <button class="pain-point-dot" aria-label="Go to slide 4"></button>
+    </div>
+  </div>
+</section>
 
 <section class="cs-section">
   <div class="eyebrow">03 — Competitive analysis</div>
@@ -175,41 +211,7 @@
     <div class="cs-pro-con">✅ Users can refine results with multiple preset filters, adding flexibility and reducing time to find ideal spots.</div>
   </div>
 
-  <h3 class="h3">Problem: missed options, and inaccurate results</h3>
-  <p>⭐️ Saluhall is one of my favorite remote workspaces in San Francisco, but because it's a food court, it won't show up if you search "cafes with wifi" — or even "places with wifi." 😠 That means users are missing out on a desirable option, and 🕘 it's open until 8pm, later than the vast majority of nearby cafes, making it a great fallback after 5pm.</p>
-  <p>😬 Searching "coffee shops with wifi" in San Jose has also turned up far more inaccurate results than in San Francisco. ⏰ Navigating to invalid locations wastes users' time, and traumatized users might feel compelled to spend extra time verifying future results.</p>
-
-  <div class="pain-point-slider">
-    <div class="pain-point-stage">
-      <button class="pain-point-arrow pain-point-arrow--prev" aria-label="Previous location">‹</button>
-      <div class="pain-point-slides">
-        <div class="pain-point-slide">
-          <div class="principle-frame"><img src="../assets/images/remote-rover-saluhall-food-court.png" alt="Saluhall food court"></div>
-          <p class="pain-point-caption"><b>Saluhall</b>: a food court that won't turn up in a "cafes with wifi" search, despite being open until 8pm with plenty of seating.</p>
-        </div>
-        <div class="pain-point-slide" hidden>
-          <div class="principle-frame"><img src="../assets/images/remote-rover-safari-crown-coffee.png" alt="Safari Crown Coffee"></div>
-          <p class="pain-point-caption"><b>Safari Crown Coffee</b>: one of the many work-friendly cafes I researched while scoping out ideal features.</p>
-        </div>
-        <div class="pain-point-slide" hidden>
-          <div class="principle-frame"><img src="../assets/images/remote-rover-ritual-coffee-roasters.png" alt="Ritual Coffee Roasters"></div>
-          <p class="pain-point-caption"><b>Ritual Coffee Roasters</b>: another SF spot studied for its work-friendly layout and amenities.</p>
-        </div>
-        <div class="pain-point-slide" hidden>
-          <div class="principle-frame"><img src="../assets/images/remote-rover-rw-cafe.png" alt="RW Cafe"></div>
-          <p class="pain-point-caption"><b>RW Cafe</b>: a smaller, lesser-known spot that's easy to miss with a generic "cafes with wifi" search.</p>
-        </div>
-      </div>
-      <button class="pain-point-arrow pain-point-arrow--next" aria-label="Next location">›</button>
-    </div>
-    <div class="pain-point-dots">
-      <button class="pain-point-dot is-active" aria-label="Go to slide 1"></button>
-      <button class="pain-point-dot" aria-label="Go to slide 2"></button>
-      <button class="pain-point-dot" aria-label="Go to slide 3"></button>
-      <button class="pain-point-dot" aria-label="Go to slide 4"></button>
-    </div>
-  </div>
-</section>
+  
 
 <section class="cs-section-band">
   <div class="cs-section">
