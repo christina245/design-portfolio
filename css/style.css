@@ -831,3 +831,48 @@ body {
 .contact-section .h1 { margin-bottom: 16px; }
 .contact-subtitle { font-size: 18px; line-height: 1.6; color: var(--muted); margin: 0 0 48px; }
 .contact-form-wrap iframe { width: 100%; border: none; display: block; }
+
+/* ---------- Mobile: nav + homepage hero/grid ---------- */
+@media (max-width: 680px) {
+  .nav {
+    flex-wrap: wrap;
+    row-gap: 10px;
+    padding: 12px 20px;
+  }
+  .nav--wide { padding-left: 20px; padding-right: 20px; }
+  .nav-brand { gap: 10px; }
+  .logo-placeholder { width: 52px; height: 52px; }
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 14px;
+    width: 100%;
+    row-gap: 10px;
+  }
+  .social-icons { gap: 14px; }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 28px 20px 40px;
+  }
+  .hero-eyebrow {
+    position: static;
+    transform: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .h1 { font-size: 40px; letter-spacing: -1px; }
+  .h2 { font-size: 30px; }
+  .h3 { font-size: 24px; }
+  .h4 { font-size: 20px; }
+
+  .divider { margin: 0 20px; }
+  .section { padding: 40px 20px 20px; }
+  .section-icon {
+    position: static;
+    transform: none;
+    margin-bottom: 10px;
+  }
+
+  .project-grid { grid-template-columns: 1fr; gap: 32px; }
+}
