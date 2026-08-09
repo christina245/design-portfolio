@@ -875,4 +875,34 @@ body {
   }
 
   .project-grid { grid-template-columns: 1fr; gap: 32px; }
+
+  /* Case study pages */
+  .cs-header { padding: 48px 20px 40px; }
+  .cs-dek { font-size: 18px; }
+  .cs-meta { gap: 24px; }
+  .cs-hero-image { padding: 0 20px 8px; }
+  .cs-lede { padding: 40px 20px 8px; }
+  .cs-section { padding: 40px 20px; }
+  .cs-cta { padding: 24px 20px 64px; }
+  .cs-cta-actions { flex-wrap: wrap; }
+
+  .cs-image-row { flex-direction: column; }
+  .repost-grid { columns: 1; }
+
+  .pain-point-stage { gap: 10px; }
+  .pain-point-arrow { width: 36px; height: 36px; font-size: 18px; }
+  .principle-frame { height: 260px; }
+  .product-frame { padding: 16px; }
+  .product-frame img { max-height: 220px; }
+
+  .phone-mockup-uniform img { width: 140px; height: 280px; }
+  .phone-mockup-row img,
+  .phone-mockup-stack > img { max-width: 60px; }
+
+  .cs-need-grid { grid-template-columns: 1fr; }
+  .cs-step-grid { grid-template-columns: 1fr; }
+  .cs-pro-con-row { flex-direction: column; }
+
+  /* Contact page */
+  .contact-section { padding: 56px 20px 56px; }
 }
