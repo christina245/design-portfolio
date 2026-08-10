@@ -850,6 +850,13 @@ body {
   }
   .social-icons { gap: 14px; }
 
+  /* Pull the theme toggle out of nav-links and pin it to the logo row */
+  .theme-toggle {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     gap: 28px;
