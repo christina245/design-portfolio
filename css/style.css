@@ -586,6 +586,7 @@ body {
   color: var(--muted);
   text-align: center;
 }
+.pain-point-slide .cs-solution-label { margin-top: 2rem; }
 .pain-point-arrow {
   background: none;
   border: 1px solid var(--border);
