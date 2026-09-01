@@ -829,25 +829,6 @@ body {
 .cs-btn--primary { background: var(--accent-grad); color: #fff; box-shadow: 0 4px 12px rgba(47, 134, 147, 0.3); }
 .cs-btn--secondary { border: 1px solid var(--border); color: var(--text); }
 
-/* Responsive 16:9 video embed */
-.cs-video-embed {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 24px 0;
-  background: #000;
-}
-.cs-video-embed iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
 /* Row of third-party logos, each on a guaranteed-white chip so brand colors read correctly in dark mode */
 .logo-row {
   display: flex;
