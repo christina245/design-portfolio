@@ -43,6 +43,13 @@
   font-weight: 700;
   src: url("../assets/fonts/open-sauce-sans-700.woff2") format('woff2'), url("../assets/fonts/open-sauce-sans-700.woff") format('woff');
 }
+@font-face {
+  font-family: 'Open Sauce One';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("../assets/fonts/open-sauce-one-400.woff2") format('woff2');
+}
 
 /* ---------- Design tokens ---------- */
 :root {
@@ -440,7 +447,7 @@ body {
   padding-top: 32px;
   border-top: 1px solid var(--border);
 }
-.cs-meta-label { font-size: 12px; font-weight: 600; letter-spacing: 1px; color: var(--muted); margin-bottom: 6px; }
+.cs-meta-label { font-family: 'Open Sauce One', 'Open Sauce Sans', sans-serif; font-size: 12px; font-weight: 400; letter-spacing: 1px; color: var(--muted); margin-bottom: 6px; }
 .cs-meta-value { font-size: 15px; font-weight: 500; }
 .cs-meta-value a { color: var(--accent-text); font-weight: 600; }
 
