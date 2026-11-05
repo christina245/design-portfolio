@@ -145,8 +145,9 @@ body {
 .link-accent-bold { color: var(--accent-text); font-weight: 600; }
 
 .eyebrow {
+  font-family: 'Open Sauce One', 'Open Sauce Sans', sans-serif;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 1.5px;
   color: var(--accent-text);
   text-transform: uppercase;
@@ -478,7 +479,6 @@ body {
 
 .cs-section { max-width: 840px; margin: 0 auto; padding: 64px 48px; }
 .cs-section-band { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-.cs-section .eyebrow { display: block; margin-bottom: 5px; }
 .cs-section p { font-size: 16px; line-height: 1.7; margin: 0 0 16px; }
 .cs-section ul { padding-left: 22px; font-size: 16px; line-height: 1.9; margin: 0 0 20px; }
 .cs-section h3 { margin-top: 40px; }
