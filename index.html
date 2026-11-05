@@ -6,6 +6,14 @@
 <title>Christina — Founding Product Designer</title>
 <link rel="icon" type="image/png" href="assets/images/dreamshell-favicon.png">
 <link rel="stylesheet" href="css/style.css">
+<script>
+  /* Hide the H1 until js/bounce-text.js has split it, so it doesn't flash.
+     Skipped for reduced motion; the timeout is a safety net if the script fails. */
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('bt-pending');
+    setTimeout(function () { document.documentElement.classList.remove('bt-pending'); }, 3000);
+  }
+</script>
 </head>
 <body>
 
@@ -32,7 +40,7 @@
 <section class="hero reveal">
   <div class="hero-copy">
     <div class="eyebrow hero-eyebrow">DESIGNER + BUILDER</div>
-    <h1 class="h1">Creating unique experiences with design</h1>
+    <h1 class="h1" data-bounce-text>Creating unique experiences with design</h1>
     <h2 class="h4">Hi! I'm Christina, the creator of the viral <a href="http://theretrocodex.com" class="link-accent" target="_blank" rel="noopener noreferrer">Retrocodex</a>. I'm a product designer determined to continue solving tough problems with inclusive design.</h2>
   </div>
   <div>
@@ -211,6 +219,7 @@
   <span>© 2026</span>
 </footer>
 
+<script src="js/bounce-text.js"></script>
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 <script src="js/main.js"></script>
 </body>

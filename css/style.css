@@ -955,3 +955,168 @@ body {
   /* Contact page */
   .contact-section { padding: 56px 20px 56px; }
 }
+
+/* ---------- Bounce text effect (hero H1) ----------
+   Letters pop in from the centre of each line while a ball bounces onto the
+   last line, squishes the letters under it, then rolls to the end of the text
+   and settles as a "period". js/bounce-text.js splits the text, measures the
+   layout, and sets --dot-x/--dot-y/--dot-travel; it swaps the plain text back
+   in once the animation ends so the finished H1 is the untouched original.
+   Colours / duration live in the variables below. */
+html.bt-pending [data-bounce-text] { visibility: hidden; }
+
+[data-bounce-text] {
+  --bt-duration: 6s;
+  --bt-wave-duration: calc(var(--bt-duration) * 0.25);
+  --bt-text-in-delay: calc(var(--bt-duration) * 0.275);
+  --bt-text-in-duration: calc(var(--bt-duration) * 0.1);
+  --bt-easing: cubic-bezier(0.5, 0, 0.5, 1);
+  --bt-dot-color: #ffd950;
+  --bt-dot-color-dark: #977a12;
+  position: relative;
+}
+
+.bt-word { display: inline-block; white-space: nowrap; }
+
+.bt-char {
+  --delay: calc(var(--bt-text-in-delay) + (0.25s * (1 - var(--distance-percent, 1))));
+  position: relative;
+  display: inline-block;
+  transform-origin: center 1em;
+}
+.bt-playing .bt-char {
+  animation: bt-text-in var(--bt-text-in-duration) var(--bt-easing) var(--delay) backwards;
+}
+@keyframes bt-text-in {
+  0% {
+    opacity: 0;
+    transform: translateX(calc(-0.4em * var(--char-offset, 0))) scale(0);
+  }
+  90% {
+    transform: translateX(0em) scale(1.1);
+  }
+}
+
+/* The letters under the landing ball: the real glyph is hidden and an
+   overlaid copy gets squished, so the animation never fights text-in. */
+.bt-char.is-squish,
+.bt-char.is-squish-soft {
+  visibility: hidden;
+  --squish-scale: 0.6;
+  --squish-y: 10%;
+}
+.bt-char.is-squish-soft { --squish-scale: 0.9; --squish-y: 5%; }
+.bt-char.is-squish::before,
+.bt-char.is-squish-soft::before {
+  content: attr(data-char);
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: visible;
+  transform-origin: center 1em;
+}
+.bt-playing .bt-char.is-squish::before,
+.bt-playing .bt-char.is-squish-soft::before {
+  animation: bt-text-squish var(--bt-duration) var(--bt-easing) forwards;
+}
+@keyframes bt-text-squish {
+  47.5%, 52.5% { transform: none; }
+  50% { transform: translateY(var(--squish-y)) scaleY(var(--squish-scale)); }
+}
+
+/* The last letter gets bumped left when the ball rolls back into it */
+.bt-playing .bt-char.is-last {
+  animation:
+    bt-text-in var(--bt-text-in-duration) var(--bt-easing) var(--delay) backwards,
+    bt-text-bonk var(--bt-duration) var(--bt-easing) forwards;
+}
+@keyframes bt-text-bonk {
+  80%, 85%, to { transform: none; }
+  82% { transform: translateX(-20%); }
+}
+
+/* The ball. Its centre starts on the last line; --dot-x/--dot-y/--dot-travel
+   are measured in px by the script. 1em here = the ball's diameter. */
+.bt-dot {
+  position: absolute;
+  left: var(--dot-x, 50%);
+  top: var(--dot-y, 50%);
+  font-size: 0.35em;
+  width: 1em;
+  height: 1em;
+  margin: -0.5em 0 0 -0.5em;
+  pointer-events: none;
+  visibility: hidden;
+}
+.bt-playing .bt-dot {
+  visibility: visible;
+  animation: bt-dot var(--bt-duration) var(--bt-easing) both;
+}
+.bt-dot-inner {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.bt-dot-inner > * { grid-area: 1 / 1; }
+.bt-playing .bt-dot-inner {
+  animation: bt-dot-inner var(--bt-duration) var(--bt-easing) both;
+}
+
+.bt-dot-wave {
+  --offset-x: -110%;
+  width: 200%;
+  height: 200%;
+  fill: var(--bt-dot-color);
+}
+.bt-dot-wave.is-back {
+  --offset-x: 110%;
+  fill: var(--bt-dot-color-dark);
+}
+.bt-playing .bt-dot-wave {
+  animation: bt-wave-in var(--bt-wave-duration) var(--bt-easing);
+}
+.bt-playing .bt-dot-wave.is-back {
+  animation-duration: calc(0.95 * var(--bt-wave-duration));
+}
+@keyframes bt-wave-in {
+  0% { transform: translateY(100%) translateX(var(--offset-x)); }
+  70% { transform: translateY(30%) translateX(0%); }
+}
+
+/* 10% fade in, 20% shoot up, 30% bounce down, 40% shoot up, 50% land on the
+   letters, 53-59% small bounces, 62% settle on the baseline */
+@keyframes bt-dot {
+  from { opacity: 0; transform: scale(3); }
+  10% { opacity: 1; transform: scale(3); }
+  15% { transform: scale(3) translateY(0.5em) scaleY(1.5); }
+  20% { transform: scale(1) translateY(-300%); }
+  30% { transform: translateY(1em) scaleY(0.5); }
+  40% { transform: translateY(-400%); }
+  50% { transform: translateY(-1em); }
+  53% { transform: translateY(-300%); }
+  56% { transform: translateY(-1em); }
+  59% { transform: translateY(-200%); }
+  62% { transform: translateY(1em); }
+  80%, 90%, to { transform: translateY(1em); }
+}
+/* roll right past the end of the text, then back to bump the last letter */
+@keyframes bt-dot-inner {
+  from, 45% { transform: none; }
+  70% {
+    transform: translateX(calc(var(--dot-travel, 0px) + 1.6em));
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0);
+  }
+  80% {
+    transform: translateX(calc(var(--dot-travel, 0px) - 0.1em));
+    animation-timing-function: var(--bt-easing);
+  }
+  83%, to { transform: translateX(var(--dot-travel, 0px)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bt-dot { display: none; }
+}
