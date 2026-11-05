@@ -58,9 +58,15 @@
   --text: #0A0A0A;
   --muted: #565F6D;
   --border: rgba(10, 10, 10, 0.09);
-  --accent: #ff2e93;
-  --accent-text: #e0157f; /* darkened from #ff2e93 for 4.5:1 text contrast on white */
-  --accent-grad: linear-gradient(90deg, #ff2e93, #d10074);
+  /* "Roundball" orange, sampled from the ball logo. #FA7A0E is the logo's deepest
+     orange (best contrast on white among the logo's own colors, but only 2.7:1), so
+     it's used for non-text accents; --accent-text is the same hue darkened to pass
+     4.5:1 for text. */
+  --accent: #FA7A0E;
+  --accent-text: #B4580A;
+  --accent-deep: #C8620B;
+  --on-accent: #14110D;
+  --accent-grad: linear-gradient(90deg, #FABE72, #FA7A0E);
   --ph-bg: #F1F1F3;
   --ph-stripe: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.04) 0px, rgba(0, 0, 0, 0.04) 2px, transparent 2px, transparent 14px);
   --badge-bg: rgba(255, 255, 255, 0.85);
@@ -72,9 +78,12 @@
   --text: #E5E5EA;
   --muted: #A3A2AF;
   --border: rgba(229, 229, 234, 0.12);
-  --accent: #ff2e93;
-  --accent-text: #ff2e93;
-  --accent-grad: linear-gradient(90deg, #ff2e93, #d10074);
+  /* the logo's highlight peach: its best contrast on the dark background (10.9:1) */
+  --accent: #FABE72;
+  --accent-text: #FABE72;
+  --accent-deep: #BB8E56;
+  --on-accent: #14110D;
+  --accent-grad: linear-gradient(90deg, #FABE72, #FA7A0E);
   --ph-bg: #1F1F2A;
   --ph-stripe: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0px, rgba(255, 255, 255, 0.03) 2px, transparent 2px, transparent 14px);
   --badge-bg: rgba(31, 31, 42, 0.85);
@@ -89,7 +98,7 @@ a:hover, a:active { text-decoration: underline; }
 /* Body text links: always underlined and in the theme's accent color */
 p a { color: var(--accent-text); text-decoration: underline; }
 ul { margin: 0; }
-::selection { background: #e0157f; color: #fff; }
+::selection { background: var(--accent); color: var(--on-accent); }
 
 body {
   font-family: 'Open Sauce Sans', sans-serif;
@@ -223,7 +232,7 @@ body {
   font-family: inherit;
 }
 .theme-toggle button svg { width: 15px; height: 15px; }
-.theme-toggle button.is-active { background: var(--accent); color: #fff; }
+.theme-toggle button.is-active { background: var(--accent); color: var(--on-accent); }
 
 /* ---------- Badges ---------- */
 .badge-row {
@@ -836,7 +845,7 @@ body {
   font-size: 16px;
 }
 .cs-btn svg { width: 18px; height: 18px; }
-.cs-btn--primary { background: var(--accent-grad); color: #fff; box-shadow: 0 4px 12px rgba(255, 46, 147, 0.3); }
+.cs-btn--primary { background: var(--accent-grad); color: var(--on-accent); box-shadow: 0 4px 12px rgba(250, 122, 14, 0.3); }
 .cs-btn--secondary { border: 1px solid var(--border); color: var(--text); }
 
 /* Row of third-party logos, each on a guaranteed-white chip so brand colors read correctly in dark mode */
@@ -971,8 +980,8 @@ html.bt-pending [data-bounce-text] { visibility: hidden; }
   --bt-text-in-delay: calc(var(--bt-duration) * 0.275);
   --bt-text-in-duration: calc(var(--bt-duration) * 0.1);
   --bt-easing: cubic-bezier(0.5, 0, 0.5, 1);
-  --bt-dot-color: #ffd950;
-  --bt-dot-color-dark: #977a12;
+  --bt-dot-color: var(--accent);       /* the ball matches the theme's accent */
+  --bt-dot-color-dark: var(--accent-deep);
   position: relative;
 }
 
