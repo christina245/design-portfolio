@@ -58,15 +58,14 @@
   --text: #0A0A0A;
   --muted: #565F6D;
   --border: rgba(10, 10, 10, 0.09);
-  /* "Roundball" orange, sampled from the ball logo. #FA7A0E is the logo's deepest
-     orange (best contrast on white among the logo's own colors, but only 2.7:1), so
-     it's used for non-text accents; --accent-text is the same hue darkened to pass
-     4.5:1 for text. */
+  /* "Roundball" orange, sampled from the ball logo: its deepest orange, the same
+     one as the bouncing dot, used for text and accents alike. On white it's only
+     2.7:1, so small text in this colour is below the 4.5:1 AA guideline. */
   --accent: #FA7A0E;
-  --accent-text: #B4580A;
+  --accent-text: #FA7A0E;
+  --btn-bg: #FA7A0E;                    /* primary button fill, both themes (white text) */
   --accent-deep: #C8620B;
   --on-accent: #14110D;
-  --accent-grad: linear-gradient(90deg, #FABE72, #FA7A0E);
   --ph-bg: #F1F1F3;
   --ph-stripe: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.04) 0px, rgba(0, 0, 0, 0.04) 2px, transparent 2px, transparent 14px);
   --badge-bg: rgba(255, 255, 255, 0.85);
@@ -83,7 +82,6 @@
   --accent-text: #FABE72;
   --accent-deep: #BB8E56;
   --on-accent: #14110D;
-  --accent-grad: linear-gradient(90deg, #FABE72, #FA7A0E);
   --ph-bg: #1F1F2A;
   --ph-stripe: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0px, rgba(255, 255, 255, 0.03) 2px, transparent 2px, transparent 14px);
   --badge-bg: rgba(31, 31, 42, 0.85);
@@ -845,7 +843,7 @@ body {
   font-size: 16px;
 }
 .cs-btn svg { width: 18px; height: 18px; }
-.cs-btn--primary { background: var(--accent-grad); color: var(--on-accent); box-shadow: 0 4px 12px rgba(250, 122, 14, 0.3); }
+.cs-btn--primary { background: var(--btn-bg); color: #fff; box-shadow: 0 4px 12px rgba(250, 122, 14, 0.3); }
 .cs-btn--secondary { border: 1px solid var(--border); color: var(--text); }
 
 /* Row of third-party logos, each on a guaranteed-white chip so brand colors read correctly in dark mode */
@@ -1128,4 +1126,16 @@ html.bt-pending [data-bounce-text] { visibility: hidden; }
 
 @media (prefers-reduced-motion: reduce) {
   .bt-dot { display: none; }
+}
+
+/* ---------- Hero image slide-in ---------- */
+.hero-media {
+  animation: hero-slide-up 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+}
+@keyframes hero-slide-up {
+  from { transform: translateY(100vh); }
+  to { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-media { animation: none; }
 }
