@@ -762,8 +762,9 @@ body {
 }
 
 .cs-solution-label {
+  font-family: 'Open Sauce One', 'Open Sauce Sans', sans-serif;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.5px;
   color: var(--accent-text);
   margin: 20px 0 10px;
@@ -1138,4 +1139,12 @@ html.bt-pending [data-bounce-text] { visibility: hidden; }
 }
 @media (prefers-reduced-motion: reduce) {
   .hero-media { animation: none; }
+}
+
+/* The hero image sits against the right edge of the page, so when it expands on
+   hover it grows leftwards (over the text column) instead of spilling off-screen.
+   Not on narrow screens, where it's full width and there's no room to grow. */
+.hero-media .hover-expand { transform-origin: right center; }
+@media (max-width: 680px) {
+  .hero-media .hover-expand:hover { transform: none; }
 }
